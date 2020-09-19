@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40D1D3512516614D00C40909 /* ScoreCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */; };
 		F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A15E251600B4005EB026 /* LearnMoreViewController.swift */; };
 		F360A16125160624005EB026 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A16025160624005EB026 /* GoalsViewController.swift */; };
 		F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25A2515AD9200611F5F /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculatorViewController.swift; sourceTree = "<group>"; };
 		F360A15E251600B4005EB026 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
 		F360A16025160624005EB026 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		F36EB2572515AD9200611F5F /* HeartAcuity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAcuity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */,
 				F360A15E251600B4005EB026 /* LearnMoreViewController.swift */,
 				F360A16025160624005EB026 /* GoalsViewController.swift */,
+				40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */,
 			);
 			path = HeartAcuity;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				F36EB28B2515AF2300611F5F /* SettingsViewController.swift in Sources */,
 				F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */,
 				F36EB25D2515AD9200611F5F /* SceneDelegate.swift in Sources */,
+				40D1D3512516614D00C40909 /* ScoreCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
