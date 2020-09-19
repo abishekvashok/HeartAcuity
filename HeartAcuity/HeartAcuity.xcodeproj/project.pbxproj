@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25A2515AD9200611F5F /* AppDelegate.swift */; };
+		F36EB25D2515AD9200611F5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25C2515AD9200611F5F /* SceneDelegate.swift */; };
+		F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25E2515AD9200611F5F /* ViewController.swift */; };
+		F36EB2622515AD9200611F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36EB2602515AD9200611F5F /* Main.storyboard */; };
+		F36EB2642515AD9400611F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36EB2632515AD9400611F5F /* Assets.xcassets */; };
+		F36EB2672515AD9400611F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36EB2652515AD9400611F5F /* LaunchScreen.storyboard */; };
+		F36EB2722515AD9400611F5F /* HeartAcuityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB2712515AD9400611F5F /* HeartAcuityTests.swift */; };
+		F36EB27D2515AD9400611F5F /* HeartAcuityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB27C2515AD9400611F5F /* HeartAcuityUITests.swift */; };
+		F36EB28B2515AF2300611F5F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB28A2515AF2300611F5F /* SettingsViewController.swift */; };
+		F36EB28D2515B13800611F5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB28C2515B13800611F5F /* HomeViewController.swift */; };
+		F36EB28F2515B17800611F5F /* RiskScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F36EB26E2515AD9400611F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F36EB24F2515AD9100611F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36EB2562515AD9200611F5F;
+			remoteInfo = HeartAcuity;
+		};
+		F36EB2792515AD9400611F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F36EB24F2515AD9100611F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36EB2562515AD9200611F5F;
+			remoteInfo = HeartAcuity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F36EB2572515AD9200611F5F /* HeartAcuity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAcuity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36EB25A2515AD9200611F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F36EB25C2515AD9200611F5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F36EB25E2515AD9200611F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F36EB2612515AD9200611F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F36EB2632515AD9400611F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36EB2662515AD9400611F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F36EB2682515AD9400611F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36EB26D2515AD9400611F5F /* HeartAcuityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAcuityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36EB2712515AD9400611F5F /* HeartAcuityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAcuityTests.swift; sourceTree = "<group>"; };
+		F36EB2732515AD9400611F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36EB2782515AD9400611F5F /* HeartAcuityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAcuityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36EB27C2515AD9400611F5F /* HeartAcuityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAcuityUITests.swift; sourceTree = "<group>"; };
+		F36EB27E2515AD9400611F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36EB28A2515AF2300611F5F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F36EB28C2515B13800611F5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskScoreViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F36EB2542515AD9200611F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EB26A2515AD9400611F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EB2752515AD9400611F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F36EB24E2515AD9100611F5F = {
+			isa = PBXGroup;
+			children = (
+				F36EB2592515AD9200611F5F /* HeartAcuity */,
+				F36EB2702515AD9400611F5F /* HeartAcuityTests */,
+				F36EB27B2515AD9400611F5F /* HeartAcuityUITests */,
+				F36EB2582515AD9200611F5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F36EB2582515AD9200611F5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F36EB2572515AD9200611F5F /* HeartAcuity.app */,
+				F36EB26D2515AD9400611F5F /* HeartAcuityTests.xctest */,
+				F36EB2782515AD9400611F5F /* HeartAcuityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F36EB2592515AD9200611F5F /* HeartAcuity */ = {
+			isa = PBXGroup;
+			children = (
+				F36EB25A2515AD9200611F5F /* AppDelegate.swift */,
+				F36EB25C2515AD9200611F5F /* SceneDelegate.swift */,
+				F36EB25E2515AD9200611F5F /* ViewController.swift */,
+				F36EB2602515AD9200611F5F /* Main.storyboard */,
+				F36EB2632515AD9400611F5F /* Assets.xcassets */,
+				F36EB2652515AD9400611F5F /* LaunchScreen.storyboard */,
+				F36EB2682515AD9400611F5F /* Info.plist */,
+				F36EB28A2515AF2300611F5F /* SettingsViewController.swift */,
+				F36EB28C2515B13800611F5F /* HomeViewController.swift */,
+				F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */,
+			);
+			path = HeartAcuity;
+			sourceTree = "<group>";
+		};
+		F36EB2702515AD9400611F5F /* HeartAcuityTests */ = {
+			isa = PBXGroup;
+			children = (
+				F36EB2712515AD9400611F5F /* HeartAcuityTests.swift */,
+				F36EB2732515AD9400611F5F /* Info.plist */,
+			);
+			path = HeartAcuityTests;
+			sourceTree = "<group>";
+		};
+		F36EB27B2515AD9400611F5F /* HeartAcuityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F36EB27C2515AD9400611F5F /* HeartAcuityUITests.swift */,
+				F36EB27E2515AD9400611F5F /* Info.plist */,
+			);
+			path = HeartAcuityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F36EB2562515AD9200611F5F /* HeartAcuity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36EB2812515AD9400611F5F /* Build configuration list for PBXNativeTarget "HeartAcuity" */;
+			buildPhases = (
+				F36EB2532515AD9200611F5F /* Sources */,
+				F36EB2542515AD9200611F5F /* Frameworks */,
+				F36EB2552515AD9200611F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartAcuity;
+			productName = HeartAcuity;
+			productReference = F36EB2572515AD9200611F5F /* HeartAcuity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F36EB26C2515AD9400611F5F /* HeartAcuityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36EB2842515AD9400611F5F /* Build configuration list for PBXNativeTarget "HeartAcuityTests" */;
+			buildPhases = (
+				F36EB2692515AD9400611F5F /* Sources */,
+				F36EB26A2515AD9400611F5F /* Frameworks */,
+				F36EB26B2515AD9400611F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36EB26F2515AD9400611F5F /* PBXTargetDependency */,
+			);
+			name = HeartAcuityTests;
+			productName = HeartAcuityTests;
+			productReference = F36EB26D2515AD9400611F5F /* HeartAcuityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F36EB2772515AD9400611F5F /* HeartAcuityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36EB2872515AD9400611F5F /* Build configuration list for PBXNativeTarget "HeartAcuityUITests" */;
+			buildPhases = (
+				F36EB2742515AD9400611F5F /* Sources */,
+				F36EB2752515AD9400611F5F /* Frameworks */,
+				F36EB2762515AD9400611F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36EB27A2515AD9400611F5F /* PBXTargetDependency */,
+			);
+			name = HeartAcuityUITests;
+			productName = HeartAcuityUITests;
+			productReference = F36EB2782515AD9400611F5F /* HeartAcuityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F36EB24F2515AD9100611F5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = HeartAcuityTeam;
+				TargetAttributes = {
+					F36EB2562515AD9200611F5F = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					F36EB26C2515AD9400611F5F = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = F36EB2562515AD9200611F5F;
+					};
+					F36EB2772515AD9400611F5F = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = F36EB2562515AD9200611F5F;
+					};
+				};
+			};
+			buildConfigurationList = F36EB2522515AD9100611F5F /* Build configuration list for PBXProject "HeartAcuity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F36EB24E2515AD9100611F5F;
+			productRefGroup = F36EB2582515AD9200611F5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F36EB2562515AD9200611F5F /* HeartAcuity */,
+				F36EB26C2515AD9400611F5F /* HeartAcuityTests */,
+				F36EB2772515AD9400611F5F /* HeartAcuityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F36EB2552515AD9200611F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36EB2672515AD9400611F5F /* LaunchScreen.storyboard in Resources */,
+				F36EB2642515AD9400611F5F /* Assets.xcassets in Resources */,
+				F36EB2622515AD9200611F5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EB26B2515AD9400611F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EB2762515AD9400611F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F36EB2532515AD9200611F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36EB28D2515B13800611F5F /* HomeViewController.swift in Sources */,
+				F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */,
+				F36EB28F2515B17800611F5F /* RiskScoreViewController.swift in Sources */,
+				F36EB28B2515AF2300611F5F /* SettingsViewController.swift in Sources */,
+				F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */,
+				F36EB25D2515AD9200611F5F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EB2692515AD9400611F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36EB2722515AD9400611F5F /* HeartAcuityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36EB2742515AD9400611F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36EB27D2515AD9400611F5F /* HeartAcuityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F36EB26F2515AD9400611F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36EB2562515AD9200611F5F /* HeartAcuity */;
+			targetProxy = F36EB26E2515AD9400611F5F /* PBXContainerItemProxy */;
+		};
+		F36EB27A2515AD9400611F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36EB2562515AD9200611F5F /* HeartAcuity */;
+			targetProxy = F36EB2792515AD9400611F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F36EB2602515AD9200611F5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F36EB2612515AD9200611F5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F36EB2652515AD9400611F5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F36EB2662515AD9400611F5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F36EB27F2515AD9400611F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F36EB2802515AD9400611F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F36EB2822515AD9400611F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartAcuity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.HeartAcuity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36EB2832515AD9400611F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartAcuity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.HeartAcuity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F36EB2852515AD9400611F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartAcuityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.HeartAcuityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartAcuity.app/HeartAcuity";
+			};
+			name = Debug;
+		};
+		F36EB2862515AD9400611F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartAcuityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.HeartAcuityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeartAcuity.app/HeartAcuity";
+			};
+			name = Release;
+		};
+		F36EB2882515AD9400611F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartAcuityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.HeartAcuityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartAcuity;
+			};
+			name = Debug;
+		};
+		F36EB2892515AD9400611F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HeartAcuityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.HeartAcuityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HeartAcuity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F36EB2522515AD9100611F5F /* Build configuration list for PBXProject "HeartAcuity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36EB27F2515AD9400611F5F /* Debug */,
+				F36EB2802515AD9400611F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36EB2812515AD9400611F5F /* Build configuration list for PBXNativeTarget "HeartAcuity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36EB2822515AD9400611F5F /* Debug */,
+				F36EB2832515AD9400611F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36EB2842515AD9400611F5F /* Build configuration list for PBXNativeTarget "HeartAcuityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36EB2852515AD9400611F5F /* Debug */,
+				F36EB2862515AD9400611F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36EB2872515AD9400611F5F /* Build configuration list for PBXNativeTarget "HeartAcuityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36EB2882515AD9400611F5F /* Debug */,
+				F36EB2892515AD9400611F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F36EB24F2515AD9100611F5F /* Project object */;
+}
