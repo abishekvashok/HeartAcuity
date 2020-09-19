@@ -56,13 +56,8 @@
                                 <rect key="frame" x="285.66666666666669" y="147.33333333333334" width="111.66666666666669" height="441.33333333333326"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Y2-Ca-AQz" userLabel="stroke score">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="147"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-=======
-                                        <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
->>>>>>> 10acbcccf9e7fb42c8469c85c75d98df70bdb271
                                         <attributedString key="attributedText">
                                             <fragment content="10%">
                                                 <attributes>
