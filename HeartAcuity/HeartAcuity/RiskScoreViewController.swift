@@ -10,7 +10,9 @@ import UIKit
 
 class RiskScoreViewController: UIViewController {
 
-    @IBOutlet weak var AilmentsTab: UIStackView!
-    UIStackView.subAr
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
     
 }

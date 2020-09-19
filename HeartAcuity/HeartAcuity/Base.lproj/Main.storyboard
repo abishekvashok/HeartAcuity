@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i3D-XV-GyH">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +13,7 @@
                 <navigationController id="sjm-0C-yiT" customClass="HomeViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Goals" id="Bj3-BA-DoP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rR2-4A-OeQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -50,42 +48,42 @@
             <objects>
                 <viewController id="TWi-AP-pmJ" customClass="RiskScoreViewController" customModule="HeartAcuity" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9oG-2X-bl0" customClass="RiskScoreView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lwn-Vu-bbf">
-                                <rect key="frame" x="34" y="179" width="240" height="538"/>
+                                <rect key="frame" x="34" y="147.33333333333334" width="240" height="441.33333333333326"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Stroke Risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VfW-o3-1Lf" userLabel="Stroke Risk">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="179.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="147"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Arrhythmia Risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-L0-blv" userLabel="Arrhythmia">
-                                        <rect key="frame" x="0.0" y="179.5" width="240" height="179"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <rect key="frame" x="0.0" y="146.99999999999994" width="240" height="147.33333333333331"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Cardiac Arrest Risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jNM-qS-zIY" userLabel="Cardiac Arrest">
-                                        <rect key="frame" x="0.0" y="358.5" width="240" height="179.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <rect key="frame" x="0.0" y="294.33333333333337" width="240" height="147"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="I9k-7T-t1V"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="height" secondItem="9oG-2X-bl0" secondAttribute="height" multiplier="0.6" id="iok-w0-kDz"/>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="centerY" secondItem="9oG-2X-bl0" secondAttribute="centerY" id="xsa-Wu-GcQ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="I9k-7T-t1V"/>
                     </view>
                     <navigationItem key="navigationItem" id="0od-3k-I7P"/>
                     <connections>
@@ -102,7 +100,7 @@
                 <navigationController id="Sti-O7-RIV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Risk Scores" id="ms1-zr-qTa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wea-Qb-dD9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -119,7 +117,7 @@
                 <navigationController id="81C-yN-JGg" customClass="SettingsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="zPr-m1-4nb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9on-pK-MEh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -135,12 +133,107 @@
             <objects>
                 <viewController id="2N9-WO-VkU" customClass="SettingsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B7v-zT-xgT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5p8-08-1SG">
+                                <rect key="frame" x="20" y="54.000000000000007" width="305.33333333333331" height="95.666666666666686"/>
+                                <string key="text">Choose Diseases 
+to see</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-PR-FZH">
+                                <rect key="frame" x="0.0" y="189.66666666666663" width="414" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBR-bP-SYr">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="NXt-SU-Rav"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="  Stroke">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="strokeSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="QE4-d1-yqE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS5-Ct-vpU">
+                                        <rect key="frame" x="20" y="120.00000000000003" width="374" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="R3Z-DE-WIN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                        <state key="normal" title="  Lung Cancer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lungCancerSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="PlT-Xi-fn6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-32-nfG">
+                                        <rect key="frame" x="20" y="240" width="374" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="C9s-uk-aHl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="  Arrhymia">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="arrhymiaSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="VIp-fT-mWu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dBR-bP-SYr" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="5KZ-xV-n5x"/>
+                                    <constraint firstItem="Z2S-32-nfG" firstAttribute="top" secondItem="sS5-Ct-vpU" secondAttribute="bottom" constant="20" id="G61-oC-LXH"/>
+                                    <constraint firstItem="Z2S-32-nfG" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="HRR-4I-yuP"/>
+                                    <constraint firstAttribute="trailing" secondItem="dBR-bP-SYr" secondAttribute="trailing" constant="20" id="jfD-n5-AIP"/>
+                                    <constraint firstAttribute="trailing" secondItem="sS5-Ct-vpU" secondAttribute="trailing" constant="20" id="wgm-NP-a5T"/>
+                                    <constraint firstItem="sS5-Ct-vpU" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="xeD-l1-GXR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z2S-32-nfG" secondAttribute="trailing" constant="20" id="yEh-hG-NEz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1dE-PR-FZH" firstAttribute="leading" secondItem="2Os-yw-JLk" secondAttribute="leading" id="2zV-aX-gkX"/>
+                            <constraint firstItem="1dE-PR-FZH" firstAttribute="centerX" secondItem="B7v-zT-xgT" secondAttribute="centerX" id="51L-ZC-uzp"/>
+                            <constraint firstItem="5p8-08-1SG" firstAttribute="leading" secondItem="2Os-yw-JLk" secondAttribute="leading" constant="20" id="UjD-Us-v7V" userLabel="Choose Diseases  to see.leading = Safe Area.leading + 20"/>
+                            <constraint firstItem="2Os-yw-JLk" firstAttribute="trailing" secondItem="1dE-PR-FZH" secondAttribute="trailing" id="W5m-eM-tKr"/>
+                            <constraint firstItem="1dE-PR-FZH" firstAttribute="top" secondItem="5p8-08-1SG" secondAttribute="bottom" constant="40" id="pOZ-pT-K1y"/>
+                            <constraint firstItem="5p8-08-1SG" firstAttribute="top" secondItem="2Os-yw-JLk" secondAttribute="top" constant="10" id="z6P-SA-zYB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2Os-yw-JLk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NdK-g4-Q23"/>
+                    <connections>
+                        <outlet property="arrhymiaSetting" destination="Z2S-32-nfG" id="Y7w-fh-QLY"/>
+                        <outlet property="arrhymiaSettingClicked" destination="Z2S-32-nfG" id="89Y-Qr-WZY"/>
+                        <outlet property="lungCancerSettings" destination="sS5-Ct-vpU" id="eCx-Jj-rpZ"/>
+                        <outlet property="strokeSetting" destination="dBR-bP-SYr" id="TxA-ve-eB9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ko-Bs-A2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,10 +244,10 @@
             <objects>
                 <viewController id="W0v-d8-adl" customClass="GoalsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1U6-sT-WIb" customClass="Hom">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yzL-Sj-pqa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="OCZ-hc-UBv"/>
                 </viewController>
@@ -163,12 +256,4 @@
             <point key="canvasLocation" x="-2200" y="-1716"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
