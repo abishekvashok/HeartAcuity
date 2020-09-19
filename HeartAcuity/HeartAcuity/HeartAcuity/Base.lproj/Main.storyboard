@@ -59,7 +59,7 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Y2-Ca-AQz" userLabel="stroke score">
                                         <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="10%">
                                                 <attributes>
@@ -73,7 +73,7 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-Ab-Ihd" userLabel="Arrhythmia score">
                                         <rect key="frame" x="0.0" y="146.99999999999994" width="111.66666666666667" height="147.33333333333331"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="2%">
                                                 <attributes>
@@ -87,7 +87,7 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-gK-NFy" userLabel="cardiac arrest score">
                                         <rect key="frame" x="0.0" y="294.33333333333337" width="111.66666666666667" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="&lt;0.02%">
                                                 <attributes>
@@ -236,15 +236,17 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="  Choose which diseases   you want/don't want the   app to track">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="strokeSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="QE4-d1-yqE"/>
                                             <segue destination="tes-9D-hOG" kind="show" id="QUr-ai-det"/>
                                         </connections>
                                     </button>
@@ -256,15 +258,17 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="  How does this work">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="lungCancerSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="PlT-Xi-fn6"/>
                                             <segue destination="THh-6n-AyA" kind="show" id="Ocu-8J-WTs"/>
                                         </connections>
                                     </button>
@@ -276,15 +280,17 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="  Credits">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="arrhymiaSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="Ouo-A0-etN"/>
                                             <segue destination="Tzs-UE-egv" kind="show" id="kqV-rH-f4X"/>
                                         </connections>
                                     </button>
@@ -296,29 +302,31 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="  Report a problem">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="arrhymiaSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="muR-rt-eyK"/>
                                             <segue destination="03E-lB-h4A" kind="show" id="7Es-qQ-Inj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="dBR-bP-SYr" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="5KZ-xV-n5x"/>
-                                    <constraint firstItem="4HZ-XF-HtX" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="6p0-8I-uYK"/>
                                     <constraint firstItem="Z2S-32-nfG" firstAttribute="top" secondItem="sS5-Ct-vpU" secondAttribute="bottom" constant="20" id="G61-oC-LXH"/>
                                     <constraint firstItem="Z2S-32-nfG" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="HRR-4I-yuP"/>
                                     <constraint firstAttribute="trailing" secondItem="dBR-bP-SYr" secondAttribute="trailing" constant="20" id="jfD-n5-AIP"/>
-                                    <constraint firstAttribute="trailing" secondItem="4HZ-XF-HtX" secondAttribute="trailing" constant="10" id="trE-Zf-4mc"/>
+                                    <constraint firstItem="4HZ-XF-HtX" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="pFy-qN-68I"/>
                                     <constraint firstAttribute="trailing" secondItem="sS5-Ct-vpU" secondAttribute="trailing" constant="20" id="wgm-NP-a5T"/>
                                     <constraint firstItem="sS5-Ct-vpU" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="xeD-l1-GXR"/>
                                     <constraint firstAttribute="trailing" secondItem="Z2S-32-nfG" secondAttribute="trailing" constant="20" id="yEh-hG-NEz"/>
+                                    <constraint firstAttribute="trailing" secondItem="4HZ-XF-HtX" secondAttribute="trailing" constant="20" id="zHR-L0-rXW"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -343,9 +351,92 @@
         <scene sceneID="9Zw-vi-CcN">
             <objects>
                 <viewController id="W0v-d8-adl" customClass="GoalsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1U6-sT-WIb" customClass="Hom">
+                    <view key="view" contentMode="scaleToFill" id="1U6-sT-WIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOu-hJ-c5D">
+                                <rect key="frame" x="10" y="54" width="98.333333333333329" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C6x-TZ-SL1">
+                                <rect key="frame" x="20" y="122" width="374" height="306"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Q6-gC5">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-fl-I7B">
+                                        <rect key="frame" x="0.0" y="46.333333333333343" width="374" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 km of 10 km " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYW-hs-F0V">
+                                        <rect key="frame" x="0.0" y="68.333333333333343" width="374" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleeping Gaols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owc-7x-uDt">
+                                        <rect key="frame" x="0.0" y="108.66666666666666" width="374" height="26.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4LI-VV-0Df">
+                                        <rect key="frame" x="0.0" y="155" width="374" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep 8 hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2o-HC-xRm">
+                                        <rect key="frame" x="0.0" y="177" width="374" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diet Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEe-SQ-rOU">
+                                        <rect key="frame" x="0.0" y="217.33333333333331" width="374" height="26.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zRe-i8-4Wu">
+                                        <rect key="frame" x="0.0" y="263.66666666666669" width="374" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 out of 5 diets a day" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkq-GM-CD9">
+                                        <rect key="frame" x="0.0" y="285.66666666666669" width="374" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GA2-B1-U88">
+                                <rect key="frame" x="10" y="458" width="385" height="99.666666666666629"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Wanna motivate friends? Or jsut show off to the world all the good things you did. We  believe you can make a difference. FEel free to post to your facebook story and let the world know you did your part ~ Towards a healthier tomorrow</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCI-f0-tQ4">
+                                <rect key="frame" x="20" y="567.66666666666663" width="160" height="30"/>
+                                <state key="normal" title="Post to Facebook Story"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xOu-hJ-c5D" firstAttribute="top" secondItem="yzL-Sj-pqa" secondAttribute="top" constant="10" id="0E8-to-M6V"/>
+                            <constraint firstItem="C6x-TZ-SL1" firstAttribute="leading" secondItem="yzL-Sj-pqa" secondAttribute="leading" constant="20" id="2ah-sq-YcG"/>
+                            <constraint firstItem="yzL-Sj-pqa" firstAttribute="trailing" secondItem="GA2-B1-U88" secondAttribute="trailing" constant="19" id="FaY-eE-RBd"/>
+                            <constraint firstItem="xOu-hJ-c5D" firstAttribute="leading" secondItem="yzL-Sj-pqa" secondAttribute="leading" constant="10" id="TwJ-pm-rdx"/>
+                            <constraint firstItem="nCI-f0-tQ4" firstAttribute="leading" secondItem="yzL-Sj-pqa" secondAttribute="leading" constant="20" id="dwr-6A-VxH"/>
+                            <constraint firstItem="C6x-TZ-SL1" firstAttribute="top" secondItem="xOu-hJ-c5D" secondAttribute="bottom" constant="20" id="ksa-LR-2UJ"/>
+                            <constraint firstItem="nCI-f0-tQ4" firstAttribute="top" secondItem="GA2-B1-U88" secondAttribute="bottom" constant="10" id="mbM-lg-8Jv"/>
+                            <constraint firstItem="GA2-B1-U88" firstAttribute="leading" secondItem="yzL-Sj-pqa" secondAttribute="leading" constant="10" id="nFm-mZ-8GA"/>
+                            <constraint firstItem="yzL-Sj-pqa" firstAttribute="trailing" secondItem="C6x-TZ-SL1" secondAttribute="trailing" constant="20" id="uN3-lw-l2i"/>
+                            <constraint firstItem="GA2-B1-U88" firstAttribute="top" secondItem="C6x-TZ-SL1" secondAttribute="bottom" constant="30" id="zJR-6D-bMG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yzL-Sj-pqa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -353,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyK-iu-iIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2504" y="-1718"/>
+            <point key="canvasLocation" x="-2504.3478260869565" y="-1718.4782608695652"/>
         </scene>
         <!--Learn More-->
         <scene sceneID="CeD-8w-fF5">
@@ -387,35 +478,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-bi-gGS">
-                                <rect key="frame" x="0.0" y="142" width="414" height="490"/>
+                                <rect key="frame" x="0.0" y="122" width="414" height="430"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JyM-Ez-VAb">
-                                        <rect key="frame" x="20" y="0.0" width="374" height="150"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JyM-Ez-VAb">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="130"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="NIJ-RY-H7d"/>
+                                            <constraint firstAttribute="height" constant="130" id="NIJ-RY-H7d"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="Heart Background2">
                                             <string key="title">  About Cardio
   vascular diseases</string>
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="10"/>
+                                                <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="JqR-6i-cbD" kind="show" id="D9v-1V-J4J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arn-Pu-ojD">
-                                        <rect key="frame" x="20" y="170" width="374" height="150"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arn-Pu-ojD">
+                                        <rect key="frame" x="20" y="150" width="374" height="130"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="5rG-eX-5BA"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="  Healthy Diet">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="  Healthy Diet" backgroundImage="Diet Background4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -426,17 +519,17 @@
                                             <segue destination="xzc-h3-eeN" kind="show" id="cmC-Tz-9jf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="egr-TK-VsF">
-                                        <rect key="frame" x="20" y="340" width="374" height="150"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="egr-TK-VsF">
+                                        <rect key="frame" x="20" y="300" width="374" height="130"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="g9s-SR-5WM"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="130" id="g9s-SR-5WM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="Fitness Background5">
                                             <string key="title">  Staying Physicaly
   Active</string>
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -462,7 +555,7 @@
                         <viewLayoutGuide key="safeArea" id="RLb-mz-3Ql"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Aj-bi-gGS" firstAttribute="top" secondItem="4Nb-Fr-3go" secondAttribute="bottom" constant="40" id="Dq7-Is-49A"/>
+                            <constraint firstItem="7Aj-bi-gGS" firstAttribute="top" secondItem="4Nb-Fr-3go" secondAttribute="bottom" constant="20" id="Dq7-Is-49A"/>
                             <constraint firstItem="7Aj-bi-gGS" firstAttribute="leading" secondItem="RLb-mz-3Ql" secondAttribute="leading" id="NS3-rL-7Wt"/>
                             <constraint firstItem="4Nb-Fr-3go" firstAttribute="top" secondItem="RLb-mz-3Ql" secondAttribute="top" constant="10" id="NeJ-fa-jRP"/>
                             <constraint firstItem="4Nb-Fr-3go" firstAttribute="leading" secondItem="RLb-mz-3Ql" secondAttribute="leading" constant="20" id="aiw-vW-PiQ"/>
@@ -487,10 +580,14 @@
                                 <rect key="frame" x="87" y="78" width="240" height="128"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zgD-UO-08H">
-                                <rect key="frame" x="10" y="254" width="394" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <rect key="frame" x="10" y="254" width="394" height="433"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Add at least 10 minutes of moderately intense physical activity to what you do every day. Sure government recommendations say to include physical activity for 30 minutes or more a day, but the bottom line is even 10 minutes makes a difference.
+
+For example, studies have found just 60 to 90 minutes a week of physical activity can reduce your heart disease risk by up to 50 percent. That's a big benefit from a pretty small commitment on your part. It doesn't have to be elaborate — take the stairs, take a walk, just get moving. As you become more active, you can try to increase your total amount of activity each day.
+
+Quality sleep is good for your heart. It can be a challenge to make time for good sleep, but it's important. For two weeks try to get eight hours of good, quality sleep each night. Yes, each person's sleep needs vary slightly, but eight is a good number to shoot for.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -507,7 +604,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2f-WH-aIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="-1105"/>
+            <point key="canvasLocation" x="800.00000000000011" y="-1105.4347826086957"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RtB-7y-RbK">
@@ -518,13 +615,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRq-qd-T4V">
-                                <rect key="frame" x="87" y="74" width="240" height="128"/>
+                                <rect key="frame" x="87" y="70" width="240" height="128"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uYW-iw-bk9">
-                                <rect key="frame" x="10" y="250" width="394" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uYW-iw-bk9">
+                                <rect key="frame" x="10" y="220" width="394" height="467"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Cardiovascular disease usually refers to conditions that involve narrowed or blocked blood vessels that can lead to a heart attack, chest pain, or stroke. Other heart conditions, such as those that affect your heart's muscle, valves or rhythm, also are considered forms of heart disease.  The occurance and symptoms of the disease can vary from person to person based on a number of factors. For instance, men are more likely to have chest pain; women are more likely to have other symptoms along with chest discomfort, such as shortness of breath, nausea and extreme fatigue. 
+Diseases under the heart disease umbrella include blood vessel diseases, such as coronary artery disease; heart rhythm problems (arrhythmias); and heart defects you're born with (congenital heart defects), among others.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -532,8 +630,10 @@
                         <viewLayoutGuide key="safeArea" id="rvN-Qi-tb3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rvN-Qi-tb3" firstAttribute="bottom" secondItem="uYW-iw-bk9" secondAttribute="bottom" constant="309" id="1mv-pW-QJM"/>
                             <constraint firstItem="uYW-iw-bk9" firstAttribute="leading" secondItem="rvN-Qi-tb3" secondAttribute="leading" constant="10" id="7nS-g1-jrA"/>
                             <constraint firstItem="rvN-Qi-tb3" firstAttribute="trailing" secondItem="uYW-iw-bk9" secondAttribute="trailing" constant="10" id="Rfl-Em-dA2"/>
+                            <constraint firstItem="uYW-iw-bk9" firstAttribute="top" secondItem="mRq-qd-T4V" secondAttribute="bottom" constant="20" id="gaD-M4-6PR"/>
                             <constraint firstItem="uYW-iw-bk9" firstAttribute="top" secondItem="mRq-qd-T4V" secondAttribute="bottom" constant="20" id="oqe-Pw-3Lf"/>
                         </constraints>
                     </view>
@@ -541,7 +641,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUR-cC-pAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="-2661"/>
+            <point key="canvasLocation" x="534.78260869565224" y="-2661.684782608696"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rh3-Ia-KQ4">
@@ -555,10 +655,10 @@
                                 <rect key="frame" x="87" y="83" width="240" height="128"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xvz-UL-972">
-                                <rect key="frame" x="10" y="259" width="394" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <rect key="frame" x="10" y="259" width="394" height="428"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Eat five servings of fruits and vegetables a day to boost your heart health. Start by eating breakfast and including at least one serving of fruit or vegetable. Snack on vegetables or fruits in between meals. Make a conscious effort to include fruits and vegetables in your daily meals. Don't worry so much about foods you shouldn't eat — just work on getting five or more servings of fruits and vegetables a day.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -575,7 +675,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ii-hA-lzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800" y="-1860"/>
+            <point key="canvasLocation" x="800.00000000000011" y="-1860.326086956522"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Xls-oJ-m5l">
@@ -1014,14 +1114,8 @@ to see</string>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Diet Background4" width="1800" height="1350"/>
+        <image name="Fitness Background5" width="1800" height="1350"/>
+        <image name="Heart Background2" width="1800" height="1350"/>
     </resources>
 </document>

@@ -14,17 +14,21 @@ class GoalsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
+        /*
+         let string = "Hello, world!"
+         let url = URL(string: "https://facebook.com")!
+         let image = UIImage(named: "mustache.jpg")
+         let pdf = Bundle.main.url(forResource: "Q4 Projections",
+                                     withExtension: "pdf")
 
-    /*
-    // MARK: - Navigation
+         let activityViewController =
+             UIActivityViewController(activityItems: [string, url, image, pdf],
+                                      applicationActivities: nil)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+         present(activityViewController, animated: true) {
+             …
+         }
+         */
     }
-    */
 
 }
