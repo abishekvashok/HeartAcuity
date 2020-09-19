@@ -70,13 +70,8 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-Ab-Ihd" userLabel="Arrhythmia score">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="146.99999999999994" width="111.66666666666667" height="147.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-=======
-                                        <rect key="frame" x="0.0" y="146.99999999999994" width="124.33333333333333" height="147.33333333333331"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
->>>>>>> 10acbcccf9e7fb42c8469c85c75d98df70bdb271
                                         <attributedString key="attributedText">
                                             <fragment content="2%">
                                                 <attributes>
