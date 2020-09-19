@@ -32,6 +32,9 @@ class RiskScoreViewController: UIViewController {
         let detectStroke = UserDefaults.standard.bool(forKey: "detectStroke")
         let detectArrythmia = UserDefaults.standard.bool(forKey: "detectArrhythmia")
         let detectCardiacArrest = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
+        let strokeScore = UserDefaults.standard.double(forKey: "detectStroke")
+        let arrythmiaScore = UserDefaults.standard.double(forKey: "detectArrhythmia")
+        let cardiacArrestScore = UserDefaults.standard.double(forKey: "detectCardiacArrest")
         
         strokeRisk.isHidden = detectStroke
         arrhythmia.isHidden = detectArrythmia
