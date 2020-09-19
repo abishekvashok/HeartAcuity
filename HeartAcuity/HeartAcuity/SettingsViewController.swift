@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var strokeSetting: UIButton!
     @IBOutlet weak var lungCancerSetting: UIButton!
     @IBOutlet weak var arrhymiaSetting: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         stroke = UserDefaults.standard.bool(forKey: "stroke")
@@ -39,7 +40,7 @@ class SettingsViewController: UIViewController {
         UserDefaults.standard.set(stroke, forKey: "stroke")
     }
     @IBAction func lungCancerSettingClicked(_ sender: Any) {
-        lungCancerSetting.backgroundColor = getBackgroundColor(setting: stroke)
+        lungCancerSetting.backgroundColor = getBackgroundColor(setting: lungCancer)
         lungCancer = !lungCancer
         UserDefaults.standard.set(lungCancer, forKey: "lungCancer")
     }

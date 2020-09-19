@@ -34,9 +34,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="81C-yN-JGg" kind="relationship" relationship="viewControllers" id="SgF-lP-qLQ"/>
                         <segue destination="Sti-O7-RIV" kind="relationship" relationship="viewControllers" id="cw2-4J-AYD"/>
                         <segue destination="sjm-0C-yiT" kind="relationship" relationship="viewControllers" id="vFi-aa-Ypt"/>
+                        <segue destination="MZg-0E-elG" kind="relationship" relationship="viewControllers" id="4dF-wb-0Jm"/>
+                        <segue destination="81C-yN-JGg" kind="relationship" relationship="viewControllers" id="SgF-lP-qLQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1H-OU-uLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hm-ph-xNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2907.2463768115945" y="-1716.8478260869567"/>
+            <point key="canvasLocation" x="-3801" y="-1486"/>
         </scene>
         <!--Risk Scores-->
         <scene sceneID="VKf-Oe-T0G">
@@ -223,88 +224,111 @@
             </objects>
             <point key="canvasLocation" x="-1370" y="-982"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--View Controller-->
         <scene sceneID="qXM-Be-PYN">
             <objects>
-                <viewController id="2N9-WO-VkU" customClass="SettingsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2N9-WO-VkU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B7v-zT-xgT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5p8-08-1SG">
-                                <rect key="frame" x="20" y="54.000000000000007" width="305.33333333333331" height="95.666666666666686"/>
-                                <string key="text">Choose Diseases 
-to see</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5p8-08-1SG">
+                                <rect key="frame" x="20" y="54" width="141.33333333333334" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-PR-FZH">
-                                <rect key="frame" x="0.0" y="189.66666666666663" width="414" height="340"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-PR-FZH">
+                                <rect key="frame" x="0.0" y="142" width="414" height="440"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBR-bP-SYr">
-                                        <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dBR-bP-SYr">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="140"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="NXt-SU-Rav"/>
+                                            <constraint firstAttribute="height" constant="140" id="os0-Yj-Ilu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="  Stroke">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="  Choose which diseases   you want/don't want the   app to track">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="strokeSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="QE4-d1-yqE"/>
+                                            <segue destination="tes-9D-hOG" kind="show" id="QUr-ai-det"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS5-Ct-vpU">
-                                        <rect key="frame" x="20" y="120.00000000000003" width="374" height="100"/>
+                                        <rect key="frame" x="20" y="160" width="374" height="80"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="R3Z-DE-WIN"/>
+                                            <constraint firstAttribute="height" constant="80" id="i3Y-JL-2pr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                        <state key="normal" title="  Lung Cancer">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="  How does this work">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="lungCancerSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="PlT-Xi-fn6"/>
+                                            <segue destination="THh-6n-AyA" kind="show" id="Ocu-8J-WTs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-32-nfG">
-                                        <rect key="frame" x="20" y="240" width="374" height="100"/>
+                                        <rect key="frame" x="20" y="260" width="374" height="80"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="C9s-uk-aHl"/>
+                                            <constraint firstAttribute="height" constant="80" id="iAy-kB-kdv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="  Arrhymia">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="  Credits">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="arrhymiaSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="VIp-fT-mWu"/>
+                                            <action selector="arrhymiaSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="Ouo-A0-etN"/>
+                                            <segue destination="Tzs-UE-egv" kind="show" id="kqV-rH-f4X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HZ-XF-HtX">
+                                        <rect key="frame" x="20" y="360" width="374" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6ko-B3-UD4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="  Report a problem">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="arrhymiaSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="muR-rt-eyK"/>
+                                            <segue destination="03E-lB-h4A" kind="show" id="7Es-qQ-Inj"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="dBR-bP-SYr" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="5KZ-xV-n5x"/>
+                                    <constraint firstItem="4HZ-XF-HtX" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="6p0-8I-uYK"/>
                                     <constraint firstItem="Z2S-32-nfG" firstAttribute="top" secondItem="sS5-Ct-vpU" secondAttribute="bottom" constant="20" id="G61-oC-LXH"/>
                                     <constraint firstItem="Z2S-32-nfG" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="HRR-4I-yuP"/>
                                     <constraint firstAttribute="trailing" secondItem="dBR-bP-SYr" secondAttribute="trailing" constant="20" id="jfD-n5-AIP"/>
+                                    <constraint firstAttribute="trailing" secondItem="4HZ-XF-HtX" secondAttribute="trailing" constant="10" id="trE-Zf-4mc"/>
                                     <constraint firstAttribute="trailing" secondItem="sS5-Ct-vpU" secondAttribute="trailing" constant="20" id="wgm-NP-a5T"/>
                                     <constraint firstItem="sS5-Ct-vpU" firstAttribute="leading" secondItem="1dE-PR-FZH" secondAttribute="leading" constant="20" id="xeD-l1-GXR"/>
                                     <constraint firstAttribute="trailing" secondItem="Z2S-32-nfG" secondAttribute="trailing" constant="20" id="yEh-hG-NEz"/>
@@ -323,12 +347,6 @@ to see</string>
                         <viewLayoutGuide key="safeArea" id="2Os-yw-JLk"/>
                     </view>
                     <navigationItem key="navigationItem" id="NdK-g4-Q23"/>
-                    <connections>
-                        <outlet property="arrhymiaSetting" destination="Z2S-32-nfG" id="Y7w-fh-QLY"/>
-                        <outlet property="arrhymiaSettingClicked" destination="Z2S-32-nfG" id="89Y-Qr-WZY"/>
-                        <outlet property="lungCancerSettings" destination="sS5-Ct-vpU" id="eCx-Jj-rpZ"/>
-                        <outlet property="strokeSetting" destination="dBR-bP-SYr" id="TxA-ve-eB9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ko-Bs-A2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,7 +355,7 @@ to see</string>
         <!--Goals View Controller-->
         <scene sceneID="9Zw-vi-CcN">
             <objects>
-                <viewController id="W0v-d8-adl" customClass="GoalsViewController" sceneMemberID="viewController">
+                <viewController id="W0v-d8-adl" customClass="GoalsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1U6-sT-WIb" customClass="Hom">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,7 +366,440 @@ to see</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyK-iu-iIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2200" y="-1716"/>
+            <point key="canvasLocation" x="-2504" y="-1718"/>
+        </scene>
+        <!--Learn More-->
+        <scene sceneID="CeD-8w-fF5">
+            <objects>
+                <navigationController id="MZg-0E-elG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Learn More" id="YUv-XM-XYv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bBJ-Aq-0nE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jDg-bJ-h9y" kind="relationship" relationship="rootViewController" id="l4a-ls-jGn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dlX-zF-Y6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="-982"/>
+        </scene>
+        <!--Learn More View Controller-->
+        <scene sceneID="JWF-8a-4V4">
+            <objects>
+                <viewController id="jDg-bJ-h9y" customClass="LearnMoreViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pBI-Rc-aCf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn more" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-Fr-3go">
+                                <rect key="frame" x="20" y="54" width="191.66666666666666" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Aj-bi-gGS">
+                                <rect key="frame" x="0.0" y="142" width="414" height="490"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JyM-Ez-VAb">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="NIJ-RY-H7d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal">
+                                            <string key="title">  About Cardio
+  vascular diseases</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="JqR-6i-cbD" kind="show" id="D9v-1V-J4J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arn-Pu-ojD">
+                                        <rect key="frame" x="20" y="170" width="374" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="  Healthy Diet">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="xzc-h3-eeN" kind="show" id="cmC-Tz-9jf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="egr-TK-VsF">
+                                        <rect key="frame" x="20" y="340" width="374" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="g9s-SR-5WM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal">
+                                            <string key="title">  Staying Physicaly
+  Active</string>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="3sF-vJ-cQW" kind="show" id="Edw-EJ-nnO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="arn-Pu-ojD" secondAttribute="trailing" constant="20" id="6Ef-XT-Zks"/>
+                                    <constraint firstItem="egr-TK-VsF" firstAttribute="leading" secondItem="7Aj-bi-gGS" secondAttribute="leading" constant="20" id="6qJ-rA-oOl"/>
+                                    <constraint firstItem="JyM-Ez-VAb" firstAttribute="leading" secondItem="7Aj-bi-gGS" secondAttribute="leading" constant="20" id="Ewu-wj-cXr"/>
+                                    <constraint firstAttribute="trailing" secondItem="egr-TK-VsF" secondAttribute="trailing" constant="20" id="F84-ZM-589"/>
+                                    <constraint firstAttribute="trailing" secondItem="JyM-Ez-VAb" secondAttribute="trailing" constant="20" id="HYS-AG-isT"/>
+                                    <constraint firstItem="egr-TK-VsF" firstAttribute="top" secondItem="arn-Pu-ojD" secondAttribute="bottom" constant="20" id="VrL-vk-unF"/>
+                                    <constraint firstItem="arn-Pu-ojD" firstAttribute="leading" secondItem="7Aj-bi-gGS" secondAttribute="leading" constant="20" id="tUj-H4-1jo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Aj-bi-gGS" firstAttribute="top" secondItem="4Nb-Fr-3go" secondAttribute="bottom" constant="40" id="Dq7-Is-49A"/>
+                            <constraint firstItem="7Aj-bi-gGS" firstAttribute="leading" secondItem="RLb-mz-3Ql" secondAttribute="leading" id="NS3-rL-7Wt"/>
+                            <constraint firstItem="4Nb-Fr-3go" firstAttribute="top" secondItem="RLb-mz-3Ql" secondAttribute="top" constant="10" id="NeJ-fa-jRP"/>
+                            <constraint firstItem="4Nb-Fr-3go" firstAttribute="leading" secondItem="RLb-mz-3Ql" secondAttribute="leading" constant="20" id="aiw-vW-PiQ"/>
+                            <constraint firstItem="RLb-mz-3Ql" firstAttribute="trailing" secondItem="7Aj-bi-gGS" secondAttribute="trailing" id="x8a-On-aJY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RLb-mz-3Ql"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6Ot-tC-TXx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjf-nd-MMs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="-1717"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eYT-1h-cWw">
+            <objects>
+                <viewController id="JqR-6i-cbD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v1o-Xs-eAw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-rK-3Zy">
+                                <rect key="frame" x="87" y="78" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zgD-UO-08H">
+                                <rect key="frame" x="10" y="254" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zgD-UO-08H" firstAttribute="top" secondItem="SFs-rK-3Zy" secondAttribute="bottom" constant="20" id="UBB-uI-azC"/>
+                            <constraint firstItem="zgD-UO-08H" firstAttribute="leading" secondItem="Ynv-lx-axY" secondAttribute="leading" constant="10" id="eXa-W7-u0a"/>
+                            <constraint firstItem="Ynv-lx-axY" firstAttribute="trailing" secondItem="zgD-UO-08H" secondAttribute="trailing" constant="10" id="yf6-Hn-fln"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ynv-lx-axY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Frj-RO-eib"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2f-WH-aIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-1105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RtB-7y-RbK">
+            <objects>
+                <viewController id="3sF-vJ-cQW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSb-8b-4JS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRq-qd-T4V">
+                                <rect key="frame" x="87" y="74" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uYW-iw-bk9">
+                                <rect key="frame" x="10" y="250" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uYW-iw-bk9" firstAttribute="leading" secondItem="rvN-Qi-tb3" secondAttribute="leading" constant="10" id="7nS-g1-jrA"/>
+                            <constraint firstItem="rvN-Qi-tb3" firstAttribute="trailing" secondItem="uYW-iw-bk9" secondAttribute="trailing" constant="10" id="Rfl-Em-dA2"/>
+                            <constraint firstItem="uYW-iw-bk9" firstAttribute="top" secondItem="mRq-qd-T4V" secondAttribute="bottom" constant="20" id="oqe-Pw-3Lf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rvN-Qi-tb3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F33-BM-Cnx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUR-cC-pAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="-2661"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rh3-Ia-KQ4">
+            <objects>
+                <viewController id="xzc-h3-eeN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIi-0f-NTY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wln-tg-qng">
+                                <rect key="frame" x="87" y="83" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xvz-UL-972">
+                                <rect key="frame" x="10" y="259" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xvz-UL-972" firstAttribute="leading" secondItem="rPJ-4t-Q5N" secondAttribute="leading" constant="10" id="6Gj-h4-Chh"/>
+                            <constraint firstItem="rPJ-4t-Q5N" firstAttribute="trailing" secondItem="xvz-UL-972" secondAttribute="trailing" constant="10" id="Rvf-RR-hJb"/>
+                            <constraint firstItem="xvz-UL-972" firstAttribute="top" secondItem="wln-tg-qng" secondAttribute="bottom" constant="20" id="cTO-2y-oDc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rPJ-4t-Q5N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pgB-al-FdC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ii-hA-lzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800" y="-1860"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Xls-oJ-m5l">
+            <objects>
+                <viewController id="tes-9D-hOG" customClass="SettingsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8a-ZQ-gRA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjp-Sy-Lx9">
+                                <rect key="frame" x="20" y="54.000000000000007" width="305.33333333333331" height="95.666666666666686"/>
+                                <string key="text">Choose Diseases 
+to see</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-lL-G5k">
+                                <rect key="frame" x="0.0" y="189.66666666666663" width="414" height="340"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMf-et-1J8">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="a7l-sj-EWS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="  Stroke">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="strokeSettingClicked:" destination="tes-9D-hOG" eventType="primaryActionTriggered" id="s3O-Rm-xB1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkV-bP-mdA">
+                                        <rect key="frame" x="20" y="120.00000000000003" width="374" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="rO9-uX-7Ck"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                        <state key="normal" title="  Cardiac Arrest">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="lungCancerSettingClicked:" destination="tes-9D-hOG" eventType="primaryActionTriggered" id="7bS-2r-fGc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-Lm-7QU">
+                                        <rect key="frame" x="20" y="240" width="374" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="l4q-TL-b9F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="  Arrhymia">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="arrhymiaSettingClicked:" destination="tes-9D-hOG" eventType="primaryActionTriggered" id="IXw-YL-NcT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FkV-bP-mdA" firstAttribute="leading" secondItem="bcm-lL-G5k" secondAttribute="leading" constant="20" id="1Te-j3-O3H"/>
+                                    <constraint firstAttribute="trailing" secondItem="lDg-Lm-7QU" secondAttribute="trailing" constant="20" id="Mf5-cY-PJz"/>
+                                    <constraint firstAttribute="trailing" secondItem="FkV-bP-mdA" secondAttribute="trailing" constant="20" id="Tbg-GC-J6a"/>
+                                    <constraint firstAttribute="trailing" secondItem="JMf-et-1J8" secondAttribute="trailing" constant="20" id="VEw-p5-8Ai"/>
+                                    <constraint firstItem="JMf-et-1J8" firstAttribute="leading" secondItem="bcm-lL-G5k" secondAttribute="leading" constant="20" id="f5Y-8h-EZe"/>
+                                    <constraint firstItem="lDg-Lm-7QU" firstAttribute="top" secondItem="FkV-bP-mdA" secondAttribute="bottom" constant="20" id="gRh-Bq-L4j"/>
+                                    <constraint firstItem="lDg-Lm-7QU" firstAttribute="leading" secondItem="bcm-lL-G5k" secondAttribute="leading" constant="20" id="hiv-xC-Sqf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bcm-lL-G5k" firstAttribute="centerX" secondItem="k8a-ZQ-gRA" secondAttribute="centerX" id="5jS-Zj-vLE"/>
+                            <constraint firstItem="Yjp-Sy-Lx9" firstAttribute="leading" secondItem="kde-bg-gnK" secondAttribute="leading" constant="20" id="7uh-vJ-zQX" userLabel="Choose Diseases  to see.leading = Safe Area.leading + 20"/>
+                            <constraint firstItem="Yjp-Sy-Lx9" firstAttribute="top" secondItem="kde-bg-gnK" secondAttribute="top" constant="10" id="DnR-UZ-LJ4"/>
+                            <constraint firstItem="bcm-lL-G5k" firstAttribute="leading" secondItem="kde-bg-gnK" secondAttribute="leading" id="XUo-gv-jvb"/>
+                            <constraint firstItem="bcm-lL-G5k" firstAttribute="top" secondItem="Yjp-Sy-Lx9" secondAttribute="bottom" constant="40" id="aCd-sR-pV8"/>
+                            <constraint firstItem="kde-bg-gnK" firstAttribute="trailing" secondItem="bcm-lL-G5k" secondAttribute="trailing" id="sYz-Ml-mps"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kde-bg-gnK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MO6-A6-FSC"/>
+                    <connections>
+                        <outlet property="arrhymiaSetting" destination="lDg-Lm-7QU" id="imo-JB-3hM"/>
+                        <outlet property="lungCancerSetting" destination="FkV-bP-mdA" id="yE2-rs-Txy"/>
+                        <outlet property="strokeSetting" destination="JMf-et-1J8" id="Pr9-sR-kjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9J-VP-cy7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1426" y="-2407"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JKO-yE-wdJ">
+            <objects>
+                <viewController id="THh-6n-AyA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sDN-H2-OQc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuP-lM-fxA">
+                                <rect key="frame" x="87" y="66" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sYM-bc-Joy">
+                                <rect key="frame" x="10" y="242" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sYM-bc-Joy" firstAttribute="top" secondItem="vuP-lM-fxA" secondAttribute="bottom" constant="20" id="ThM-q1-3Ez"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ewe-Kd-U16"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H3E-0g-SPp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLA-RW-D5r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2096" y="-2407"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ytq-VM-3Eq">
+            <objects>
+                <viewController id="Tzs-UE-egv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4L3-CA-fRH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hH-fU-hlc">
+                                <rect key="frame" x="87" y="79" width="240" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6EW-SZ-WCO">
+                                <rect key="frame" x="10" y="255" width="394" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6EW-SZ-WCO" firstAttribute="top" secondItem="5hH-fU-hlc" secondAttribute="bottom" constant="20" id="qR7-Eg-kw2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S5o-sk-OaW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="owC-2e-OlX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="obv-av-Udr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-2407"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wxs-vk-gOw">
+            <objects>
+                <viewController id="03E-lB-h4A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQG-ss-a5y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ijh-K9-avC">
+                                <rect key="frame" x="10" y="54.000000000000007" width="394" height="99.666666666666686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Your feedback is one of the most valuable things in the world for us. We would like to hear from you, be it a small typo correction request, or a friendly suggestion, feel free to tell us. Whatever your report maybe, a human will always read it and will get back to you as soon as we see it!</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ius-RX-GPF">
+                                <rect key="frame" x="15" y="163.66666666666666" width="158" height="30"/>
+                                <state key="normal" title="Send a report via email"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ius-RX-GPF" firstAttribute="leading" secondItem="hEp-jU-kjn" secondAttribute="leading" constant="15" id="DjV-qO-EMr"/>
+                            <constraint firstItem="Ius-RX-GPF" firstAttribute="top" secondItem="ijh-K9-avC" secondAttribute="bottom" constant="10" id="deb-Cc-hSw"/>
+                            <constraint firstItem="ijh-K9-avC" firstAttribute="top" secondItem="hEp-jU-kjn" secondAttribute="top" constant="10" id="eap-VK-tXG"/>
+                            <constraint firstItem="ijh-K9-avC" firstAttribute="leading" secondItem="hEp-jU-kjn" secondAttribute="leading" constant="10" id="u2M-G3-LIu"/>
+                            <constraint firstItem="hEp-jU-kjn" firstAttribute="trailing" secondItem="ijh-K9-avC" secondAttribute="trailing" constant="10" id="x9Y-Fz-pkH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hEp-jU-kjn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oWI-BK-Oni"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qez-UT-cq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2770" y="-2407"/>
         </scene>
     </scenes>
 </document>

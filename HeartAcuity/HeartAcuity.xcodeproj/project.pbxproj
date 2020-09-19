@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A15E251600B4005EB026 /* LearnMoreViewController.swift */; };
+		F360A16125160624005EB026 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A16025160624005EB026 /* GoalsViewController.swift */; };
 		F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25A2515AD9200611F5F /* AppDelegate.swift */; };
 		F36EB25D2515AD9200611F5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25C2515AD9200611F5F /* SceneDelegate.swift */; };
 		F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25E2515AD9200611F5F /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		F360A15E251600B4005EB026 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
+		F360A16025160624005EB026 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		F36EB2572515AD9200611F5F /* HeartAcuity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAcuity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36EB25A2515AD9200611F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F36EB25C2515AD9200611F5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				F36EB28C2515B13800611F5F /* HomeViewController.swift */,
 				F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */,
 				F360A15E251600B4005EB026 /* LearnMoreViewController.swift */,
+				F360A16025160624005EB026 /* GoalsViewController.swift */,
 			);
 			path = HeartAcuity;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */,
+				F360A16125160624005EB026 /* GoalsViewController.swift in Sources */,
 				F36EB28D2515B13800611F5F /* HomeViewController.swift in Sources */,
 				F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */,
 				F36EB28F2515B17800611F5F /* RiskScoreViewController.swift in Sources */,
