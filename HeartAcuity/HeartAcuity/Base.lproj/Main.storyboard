@@ -84,13 +84,8 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-gK-NFy" userLabel="cardiac arrest score">
-<<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="294.33333333333337" width="111.66666666666667" height="147"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-=======
-                                        <rect key="frame" x="0.0" y="294.33333333333337" width="124.33333333333333" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
->>>>>>> 10acbcccf9e7fb42c8469c85c75d98df70bdb271
                                         <attributedString key="attributedText">
                                             <fragment content="&lt;0.02%">
                                                 <attributes>
