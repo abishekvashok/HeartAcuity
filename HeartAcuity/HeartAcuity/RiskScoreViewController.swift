@@ -8,6 +8,9 @@
 
 import UIKit
 
-class RiskScoreViewController: UINavigationController {
+class RiskScoreViewController: UIViewController {
 
+    @IBOutlet weak var AilmentsTab: UIStackView!
+    UIStackView.subAr
+    
 }

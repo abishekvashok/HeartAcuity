@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,6 +18,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="W0v-d8-adl" kind="relationship" relationship="rootViewController" id="gaP-Rd-QKH"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQy-ur-Oa7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,15 +45,69 @@
             </objects>
             <point key="canvasLocation" x="-2128" y="-249"/>
         </scene>
+        <!--Risk Score View Controller-->
+        <scene sceneID="fVP-nK-xK6">
+            <objects>
+                <viewController id="TWi-AP-pmJ" customClass="RiskScoreViewController" customModule="HeartAcuity" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9oG-2X-bl0" customClass="RiskScoreView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lwn-Vu-bbf">
+                                <rect key="frame" x="34" y="179" width="240" height="538"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Stroke Risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VfW-o3-1Lf" userLabel="Stroke Risk">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="179.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Arrhythmia Risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-L0-blv" userLabel="Arrhythmia">
+                                        <rect key="frame" x="0.0" y="179.5" width="240" height="179"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Cardiac Arrest Risk" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jNM-qS-zIY" userLabel="Cardiac Arrest">
+                                        <rect key="frame" x="0.0" y="358.5" width="240" height="179.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I9k-7T-t1V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lwn-Vu-bbf" firstAttribute="height" secondItem="9oG-2X-bl0" secondAttribute="height" multiplier="0.6" id="iok-w0-kDz"/>
+                            <constraint firstItem="lwn-Vu-bbf" firstAttribute="centerY" secondItem="9oG-2X-bl0" secondAttribute="centerY" id="xsa-Wu-GcQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0od-3k-I7P"/>
+                    <connections>
+                        <outlet property="AilmentsTab" destination="lwn-Vu-bbf" id="xMG-Hw-l8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hm-ph-xNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2907.2463768115945" y="-1716.2946428571429"/>
+        </scene>
         <!--Risk Scores-->
         <scene sceneID="VKf-Oe-T0G">
             <objects>
-                <navigationController id="Sti-O7-RIV" customClass="RiskScoreViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="Sti-O7-RIV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Risk Scores" id="ms1-zr-qTa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wea-Qb-dD9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="TWi-AP-pmJ" kind="relationship" relationship="rootViewController" id="29n-sQ-GHa"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y11-00-s0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,10 +122,53 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="2N9-WO-VkU" kind="relationship" relationship="rootViewController" id="t9h-PL-Aen"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcp-uJ-K5M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1370" y="-982"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="qXM-Be-PYN">
+            <objects>
+                <viewController id="2N9-WO-VkU" customClass="SettingsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B7v-zT-xgT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2Os-yw-JLk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NdK-g4-Q23"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ko-Bs-A2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1425" y="-1716"/>
+        </scene>
+        <!--Goals View Controller-->
+        <scene sceneID="9Zw-vi-CcN">
+            <objects>
+                <viewController id="W0v-d8-adl" customClass="GoalsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1U6-sT-WIb" customClass="Hom">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yzL-Sj-pqa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OCZ-hc-UBv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyK-iu-iIt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2200" y="-1716"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
