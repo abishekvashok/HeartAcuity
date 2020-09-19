@@ -10,9 +10,21 @@ import UIKit
 
 class RiskScoreViewController: UIViewController {
 
+    
+    @IBOutlet weak var AilmentsTab: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let detectStroke = UserDefaults.standard.bool(forKey: "detectStroke")
+        let detectArrythmia = UserDefaults.standard.bool(forKey: "detectArrhythmia")
+        let detectCardiacArrest = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
+        
+        for UIView in AilmentsTab.arrangedSubviews {
+            UIView.isHidden = detect
+        }
+        
+        AilmentsTab.arrangedSubviews
     }
     
 }
