@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		407AD7AE2515EF3000165292 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 407AD7AD2515EF3000165292 /* fonts */; };
 		F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25A2515AD9200611F5F /* AppDelegate.swift */; };
 		F36EB25D2515AD9200611F5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25C2515AD9200611F5F /* SceneDelegate.swift */; };
 		F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36EB25E2515AD9200611F5F /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		407AD7AD2515EF3000165292 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../../Downloads/Rubik/fonts; sourceTree = "<group>"; };
 		F36EB2572515AD9200611F5F /* HeartAcuity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartAcuity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36EB25A2515AD9200611F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F36EB25C2515AD9200611F5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				F36EB25E2515AD9200611F5F /* ViewController.swift */,
 				F36EB2602515AD9200611F5F /* Main.storyboard */,
 				F36EB2632515AD9400611F5F /* Assets.xcassets */,
+				407AD7AD2515EF3000165292 /* fonts */,
 				F36EB2652515AD9400611F5F /* LaunchScreen.storyboard */,
 				F36EB2682515AD9400611F5F /* Info.plist */,
 				F36EB28A2515AF2300611F5F /* SettingsViewController.swift */,
@@ -244,6 +247,7 @@
 				F36EB2672515AD9400611F5F /* LaunchScreen.storyboard in Resources */,
 				F36EB2642515AD9400611F5F /* Assets.xcassets in Resources */,
 				F36EB2622515AD9200611F5F /* Main.storyboard in Resources */,
+				407AD7AE2515EF3000165292 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

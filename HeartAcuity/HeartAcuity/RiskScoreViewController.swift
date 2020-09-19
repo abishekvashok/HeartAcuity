@@ -10,8 +10,21 @@ import UIKit
 
 class RiskScoreViewController: UIViewController {
 
+    @IBOutlet weak var strokeScore: UITextView!
     
-    @IBOutlet weak var AilmentsTab: UIStackView!
+    @IBOutlet weak var arrhythmiaScore: UITextView!
+    
+    @IBOutlet weak var cardiacArrestScore: UITextView!
+    
+    @IBOutlet weak var ailmentsTab: UIStackView!
+   
+    @IBOutlet weak var strokeRisk: UITextView!
+    
+    @IBOutlet weak var arrhythmia: UITextView!
+    
+    
+    @IBOutlet weak var cardiacArrest: UITextView!
+    
     
     
     override func viewDidLoad() {
@@ -20,11 +33,9 @@ class RiskScoreViewController: UIViewController {
         let detectArrythmia = UserDefaults.standard.bool(forKey: "detectArrhythmia")
         let detectCardiacArrest = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
         
-        for UIView in AilmentsTab.arrangedSubviews {
-            UIView.isHidden = detect
-        }
-        
-        AilmentsTab.arrangedSubviews
+        strokeRisk.isHidden = detectStroke
+        arrhythmia.isHidden = detectArrythmia
+        cardiacArrest.isHidden = detectCardiacArrest
     }
     
 }
