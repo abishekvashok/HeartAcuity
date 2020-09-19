@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i3D-XV-GyH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i3D-XV-GyH">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Goals-->
         <scene sceneID="UUX-ZZ-ARc">
             <objects>
-                <navigationController id="sjm-0C-yiT" customClass="HomeViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="sjm-0C-yiT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Goals" id="Bj3-BA-DoP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rR2-4A-OeQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -58,12 +56,12 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Y2-Ca-AQz" userLabel="stroke score">
                                         <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="10%">
                                                 <attributes>
                                                     <color key="NSColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="25" name="Rubik-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="25"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -72,12 +70,12 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-Ab-Ihd" userLabel="Arrhythmia score">
                                         <rect key="frame" x="0.0" y="146.99999999999994" width="124.33333333333333" height="147.33333333333331"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="2%">
                                                 <attributes>
                                                     <color key="NSColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="25" name="Rubik-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="25"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -86,12 +84,12 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-gK-NFy" userLabel="cardiac arrest score">
                                         <rect key="frame" x="0.0" y="294.33333333333337" width="124.33333333333333" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="0.02%">
                                                 <attributes>
                                                     <color key="NSColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="25" name="Rubik-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="25"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -105,12 +103,12 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfW-o3-1Lf" userLabel="Stroke Risk">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Stroke Risk">
                                                 <attributes>
                                                     <color key="NSColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="25" name="Rubik-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="25"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -119,12 +117,12 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-L0-blv" userLabel="Arrhythmia">
                                         <rect key="frame" x="0.0" y="146.99999999999994" width="155" height="147.33333333333331"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Arrhythmia Risk">
                                                 <attributes>
                                                     <color key="NSColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="25" name="Rubik-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="25"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -133,12 +131,12 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jNM-qS-zIY" userLabel="Cardiac Arrest">
                                         <rect key="frame" x="0.0" y="294.33333333333337" width="155" height="147"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Cardiac Arrest Risk">
                                                 <attributes>
                                                     <color key="NSColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="25" name="Rubik-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="25"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -147,8 +145,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="I9k-7T-t1V"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9ng-sx-wBp" firstAttribute="centerX" secondItem="9oG-2X-bl0" secondAttribute="centerX" multiplier="1.65" id="1b3-6Y-ZCP"/>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="centerX" secondItem="9oG-2X-bl0" secondAttribute="centerX" multiplier="0.5" id="AOy-zF-2bA"/>
@@ -159,6 +156,7 @@
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="width" secondItem="9oG-2X-bl0" secondAttribute="width" multiplier="0.375" id="oN7-PA-hLj"/>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="centerY" secondItem="9oG-2X-bl0" secondAttribute="centerY" id="xsa-Wu-GcQ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="I9k-7T-t1V"/>
                     </view>
                     <navigationItem key="navigationItem" id="0od-3k-I7P"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -196,7 +194,7 @@
         <!--Settings-->
         <scene sceneID="OBN-QQ-4J4">
             <objects>
-                <navigationController id="81C-yN-JGg" customClass="SettingsViewController" customModule="HeartAcuity" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="81C-yN-JGg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="zPr-m1-4nb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9on-pK-MEh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -229,9 +227,9 @@ to see</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-PR-FZH">
                                 <rect key="frame" x="0.0" y="189.66666666666663" width="414" height="340"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBR-bP-SYr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBR-bP-SYr">
                                         <rect key="frame" x="20" y="0.0" width="374" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="NXt-SU-Rav"/>
                                         </constraints>
@@ -248,9 +246,9 @@ to see</string>
                                             <action selector="strokeSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="QE4-d1-yqE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS5-Ct-vpU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS5-Ct-vpU">
                                         <rect key="frame" x="20" y="120.00000000000003" width="374" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="R3Z-DE-WIN"/>
                                         </constraints>
@@ -267,9 +265,9 @@ to see</string>
                                             <action selector="lungCancerSettingClicked:" destination="2N9-WO-VkU" eventType="primaryActionTriggered" id="PlT-Xi-fn6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-32-nfG">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-32-nfG">
                                         <rect key="frame" x="20" y="240" width="374" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="C9s-uk-aHl"/>
                                         </constraints>
@@ -298,8 +296,7 @@ to see</string>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2Os-yw-JLk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1dE-PR-FZH" firstAttribute="leading" secondItem="2Os-yw-JLk" secondAttribute="leading" id="2zV-aX-gkX"/>
                             <constraint firstItem="1dE-PR-FZH" firstAttribute="centerX" secondItem="B7v-zT-xgT" secondAttribute="centerX" id="51L-ZC-uzp"/>
@@ -308,6 +305,7 @@ to see</string>
                             <constraint firstItem="1dE-PR-FZH" firstAttribute="top" secondItem="5p8-08-1SG" secondAttribute="bottom" constant="40" id="pOZ-pT-K1y"/>
                             <constraint firstItem="5p8-08-1SG" firstAttribute="top" secondItem="2Os-yw-JLk" secondAttribute="top" constant="10" id="z6P-SA-zYB"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Os-yw-JLk"/>
                     </view>
                     <navigationItem key="navigationItem" id="NdK-g4-Q23"/>
                     <connections>
@@ -328,8 +326,8 @@ to see</string>
                     <view key="view" contentMode="scaleToFill" id="1U6-sT-WIb" customClass="Hom">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yzL-Sj-pqa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="OCZ-hc-UBv"/>
                 </viewController>
@@ -338,12 +336,4 @@ to see</string>
             <point key="canvasLocation" x="-2200" y="-1716"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
