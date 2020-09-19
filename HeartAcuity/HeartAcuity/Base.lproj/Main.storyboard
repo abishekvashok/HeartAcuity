@@ -54,10 +54,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9ng-sx-wBp" userLabel="Score Stack">
-                                <rect key="frame" x="289.66666666666669" y="147.33333333333334" width="103.66666666666669" height="441.33333333333326"/>
+                                <rect key="frame" x="285.66666666666669" y="147.33333333333334" width="111.66666666666669" height="441.33333333333326"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Y2-Ca-AQz" userLabel="stroke score">
-                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="147"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="147"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="10%">
@@ -71,7 +71,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-Ab-Ihd" userLabel="Arrhythmia score">
-                                        <rect key="frame" x="0.0" y="146.99999999999994" width="103.66666666666667" height="147.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="146.99999999999994" width="111.66666666666667" height="147.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="2%">
@@ -85,7 +85,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-gK-NFy" userLabel="cardiac arrest score">
-                                        <rect key="frame" x="0.0" y="294.33333333333337" width="103.66666666666667" height="147"/>
+                                        <rect key="frame" x="0.0" y="294.33333333333337" width="111.66666666666667" height="147"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="&lt;0.02%">
@@ -154,7 +154,7 @@
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="centerX" secondItem="9oG-2X-bl0" secondAttribute="centerX" multiplier="0.5" id="AOy-zF-2bA"/>
                             <constraint firstItem="9ng-sx-wBp" firstAttribute="centerY" secondItem="9oG-2X-bl0" secondAttribute="centerY" id="D1t-UK-m0t"/>
                             <constraint firstItem="9ng-sx-wBp" firstAttribute="height" secondItem="9oG-2X-bl0" secondAttribute="height" multiplier="0.6" id="SEq-9d-9dc"/>
-                            <constraint firstItem="9ng-sx-wBp" firstAttribute="width" secondItem="9oG-2X-bl0" secondAttribute="width" multiplier="0.25" id="e5P-bJ-l7R"/>
+                            <constraint firstItem="9ng-sx-wBp" firstAttribute="width" secondItem="9oG-2X-bl0" secondAttribute="width" multiplier="0.27" id="e5P-bJ-l7R"/>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="height" secondItem="9oG-2X-bl0" secondAttribute="height" multiplier="0.6" id="iok-w0-kDz"/>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="width" secondItem="9oG-2X-bl0" secondAttribute="width" multiplier="0.375" id="oN7-PA-hLj"/>
                             <constraint firstItem="lwn-Vu-bbf" firstAttribute="centerY" secondItem="9oG-2X-bl0" secondAttribute="centerY" id="xsa-Wu-GcQ"/>
