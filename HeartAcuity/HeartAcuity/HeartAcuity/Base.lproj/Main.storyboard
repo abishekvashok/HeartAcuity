@@ -216,7 +216,6 @@
                     <navigationItem key="navigationItem" id="0od-3k-I7P"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="ailmentsTab" destination="lwn-Vu-bbf" id="tKK-77-h4a"/>
                         <outlet property="arrhythmiaScore" destination="IHA-Ab-Ihd" id="Dza-ph-1Dc"/>
                         <outlet property="arrhythmiaScoreView" destination="Ai1-hV-7zk" id="7VK-Kq-4w4"/>
                         <outlet property="arrhythmiaView" destination="MP7-wA-yIb" id="EaV-uy-2NX"/>
@@ -417,7 +416,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C6x-TZ-SL1">
-                                <rect key="frame" x="20" y="122.00000000000001" width="374" height="197.33333333333337"/>
+                                <rect key="frame" x="20" y="122.00000000000001" width="374" height="201.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Q6-gC5">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="26.333333333333332"/>
@@ -435,7 +434,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleeping Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owc-7x-uDt">
-                                        <rect key="frame" x="0.0" y="108.66666666666666" width="374" height="26.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="110.66666666666666" width="374" height="26.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -452,16 +451,15 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GA2-B1-U88">
-                                <rect key="frame" x="10" y="349.33333333333331" width="385" height="99.666666666666686"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-
+                                <rect key="frame" x="10" y="353.33333333333331" width="385" height="99.666666666666686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Wanna motivate friends? Or jsut show off to the world all the good things you did. We  believe you can make a difference. FEel free to post to your facebook story and let the world know you did your part ~ Towards a healthier tomorrow</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCI-f0-tQ4">
-                                <rect key="frame" x="20" y="459" width="160" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCI-f0-tQ4">
+                                <rect key="frame" x="20" y="463" width="160" height="30"/>
                                 <state key="normal" title="Post to Facebook Story"/>
                             </button>
                         </subviews>
@@ -959,7 +957,7 @@ to see</string>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-KV-w7a" userLabel="Age Entry">
                                                 <rect key="frame" x="186.33333333333337" y="15" width="149" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.97647058819999999" green="0.43921568630000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -992,7 +990,7 @@ to see</string>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jFe-T1-Q4K" userLabel="Height Entry">
                                                 <rect key="frame" x="186.33333333333337" y="14.666666666666657" width="149" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.97647058819999999" green="0.43921568630000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1017,7 +1015,7 @@ to see</string>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vLK-Vb-q1x" userLabel="Weight Entry">
                                                 <rect key="frame" x="186.33333333333337" y="14.666666666666629" width="149" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" red="0.97647058819999999" green="0.43921568630000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -1186,6 +1184,7 @@ to see</string>
                     <connections>
                         <outlet property="ageEntry" destination="h3c-KV-w7a" id="f9t-EN-f9k"/>
                         <outlet property="calculateRisk" destination="ArE-aS-srY" id="e8J-i4-f3u"/>
+                        <outlet property="genderTab" destination="vyz-Lq-CDX" id="bM8-Ke-nK8"/>
                         <outlet property="heightEntry" destination="vLK-Vb-q1x" id="LtH-P3-wK0"/>
                         <outlet property="isSmoker" destination="YuY-kJ-JCq" id="qch-xy-yPt"/>
                         <outlet property="rrContainer" destination="NSP-mK-uzg" id="HpV-FL-b64"/>

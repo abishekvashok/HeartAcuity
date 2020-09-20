@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4059AF222517809600C11935 /* HA_SVM_cardiacarrest_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4059AF212517809600C11935 /* HA_SVM_cardiacarrest_coreml.mlmodel */; };
+		4059AF27251780D600C11935 /* HA_SVM_arrhythmia_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4059AF26251780D600C11935 /* HA_SVM_arrhythmia_coreml.mlmodel */; };
+		4059AF2C2517812000C11935 /* RF_stroke_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4059AF2B2517812000C11935 /* RF_stroke_coreml.mlmodel */; };
+		4059AF3125178B8E00C11935 /* XGB_arrhythmia_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4059AF3025178B8E00C11935 /* XGB_arrhythmia_coreml.mlmodel */; };
 		406013BB25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */; };
 		406013C025171F56000E58C1 /* HA_xgb_test_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */; };
 		406013C725173CC2000E58C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406013C625173CC2000E58C1 /* HealthKit.framework */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4059AF212517809600C11935 /* HA_SVM_cardiacarrest_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_SVM_cardiacarrest_coreml.mlmodel; path = "../../../Models 2/HA_SVM_cardiacarrest_coreml.mlmodel"; sourceTree = "<group>"; };
+		4059AF26251780D600C11935 /* HA_SVM_arrhythmia_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_SVM_arrhythmia_coreml.mlmodel; path = "../../../Models 2/HA_SVM_arrhythmia_coreml.mlmodel"; sourceTree = "<group>"; };
+		4059AF2B2517812000C11935 /* RF_stroke_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RF_stroke_coreml.mlmodel; path = "../../../Models 2/RF Final CoreML/RF_stroke_coreml.mlmodel"; sourceTree = "<group>"; };
+		4059AF3025178B8E00C11935 /* XGB_arrhythmia_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = XGB_arrhythmia_coreml.mlmodel; path = "../../../Models 3/XGBoost Final CoreML/XGB_arrhythmia_coreml.mlmodel"; sourceTree = "<group>"; };
 		406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_rf_test_coreml.mlmodel; path = ../../../Models/HA_rf_test_coreml.mlmodel; sourceTree = "<group>"; };
 		406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_xgb_test_coreml.mlmodel; path = ../../../Models/HA_xgb_test_coreml.mlmodel; sourceTree = "<group>"; };
 		406013C425173CC1000E58C1 /* HeartAcuity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartAcuity.entitlements; sourceTree = "<group>"; };
@@ -140,6 +148,10 @@
 				F36EB28C2515B13800611F5F /* HomeViewController.swift */,
 				F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */,
 				F360A15E251600B4005EB026 /* LearnMoreViewController.swift */,
+				4059AF2B2517812000C11935 /* RF_stroke_coreml.mlmodel */,
+				4059AF26251780D600C11935 /* HA_SVM_arrhythmia_coreml.mlmodel */,
+				4059AF3025178B8E00C11935 /* XGB_arrhythmia_coreml.mlmodel */,
+				4059AF212517809600C11935 /* HA_SVM_cardiacarrest_coreml.mlmodel */,
 				406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */,
 				406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */,
 				F360A16025160624005EB026 /* GoalsViewController.swift */,
@@ -299,14 +311,18 @@
 			files = (
 				F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */,
 				406013C025171F56000E58C1 /* HA_xgb_test_coreml.mlmodel in Sources */,
+				4059AF2C2517812000C11935 /* RF_stroke_coreml.mlmodel in Sources */,
 				406013BB25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel in Sources */,
 				F360A16125160624005EB026 /* GoalsViewController.swift in Sources */,
 				F36EB28D2515B13800611F5F /* HomeViewController.swift in Sources */,
+				4059AF27251780D600C11935 /* HA_SVM_arrhythmia_coreml.mlmodel in Sources */,
+				4059AF222517809600C11935 /* HA_SVM_cardiacarrest_coreml.mlmodel in Sources */,
 				F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */,
 				F36EB28F2515B17800611F5F /* RiskScoreViewController.swift in Sources */,
 				F36EB28B2515AF2300611F5F /* SettingsViewController.swift in Sources */,
 				F36EB25B2515AD9200611F5F /* AppDelegate.swift in Sources */,
 				F36EB25D2515AD9200611F5F /* SceneDelegate.swift in Sources */,
+				4059AF3125178B8E00C11935 /* XGB_arrhythmia_coreml.mlmodel in Sources */,
 				40D1D3512516614D00C40909 /* ScoreCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

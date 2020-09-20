@@ -36,7 +36,7 @@ class RiskScoreViewController: UIViewController {
         super.viewDidLoad()
         let detectStroke = UserDefaults.standard.bool(forKey: "stroke")
         let detectArrythmia = UserDefaults.standard.bool(forKey: "arrhythmia")
-        let detectCardiacArrest = UserDefaults.standard.bool(forKey: "cardiacArrest")
+        let detectCardiacArrest = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
         let inputStrokeScore = UserDefaults.standard.double(forKey: "strokeScore")
         let inputArrythmiaScore = UserDefaults.standard.double(forKey: "arrythmiaScore")
         let inputCardiacArrestScore = UserDefaults.standard.double(forKey: "cardiacArrestScore")

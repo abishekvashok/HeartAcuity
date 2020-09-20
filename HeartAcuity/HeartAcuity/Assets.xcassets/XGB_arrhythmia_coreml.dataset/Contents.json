@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "XGB_arrhythmia_coreml.mlmodel",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

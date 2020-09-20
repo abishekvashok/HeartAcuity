@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "RF_stroke_coreml.mlmodel",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

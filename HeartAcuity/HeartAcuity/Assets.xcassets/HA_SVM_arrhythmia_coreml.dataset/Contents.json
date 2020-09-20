@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "HA_SVM_arrhythmia_coreml.mlmodel",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

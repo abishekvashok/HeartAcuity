@@ -24,7 +24,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         stroke = UserDefaults.standard.bool(forKey: "stroke")
         lungCancer = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
-        arrhymia = UserDefaults.standard.bool(forKey: "arrhymia")
+        arrhymia = UserDefaults.standard.bool(forKey: "arrhythmia")
         
     }
     func getBackgroundColor(setting: Bool) -> UIColor{

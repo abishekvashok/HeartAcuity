@@ -8,6 +8,7 @@
 
 import UIKit
 import HealthKit
+import CoreML
 
 class ScoreCalculatorViewController: UIViewController {
     
@@ -34,16 +35,72 @@ class ScoreCalculatorViewController: UIViewController {
     
     @IBAction func CalculateRisk(_ sender: Any) {
         
+        let cardiacArrestModel = HA_SVM_cardiacarrest_coreml()
+        let strokeModel = RF_stroke_coreml()
+        let arrhythmiaModel = HA_SVM_arrhythmia_coreml()
+            //gender, age, height, weight, family history, hrv
+        let age = Double(ageEntry.text!)
+        let height = Double(177)
+        let weight = Double(130)
+        let gender = Double(genderTab.selectedSegmentIndex)
+        let smoking = Double(isSmoker.selectedSegmentIndex)
+        let rrVal =  Double(rrContainer.text!)
         
-    
-        let model = HA_xgb_test_coreml()
-        
-        guard let modelOutput = try? model.prediction(policyID: 1.1, eq_site_limit: 1.1, hu_site_limit: 1.1, fl_site_limit: 1.1, fr_site_limit: 1.1, tiv_2011: 1.1, tiv_2012: 1.1, eq_site_deductible: 1.1, hu_site_deductible: 1.1, fl_site_deductible: 1.1, fr_site_deductible: 1.1, point_latitude: 1.1, point_longitude: 1.1, point_granularity: 1.1, statecode_ohe_0: 1.1, county_ohe_0: 1.1, county_ohe_1: 1.1, county_ohe_2: 1.1, county_ohe_3: 1.1, county_ohe_4: 1.1, county_ohe_5: 1.1, county_ohe_6: 1.1, county_ohe_7: 1.1, county_ohe_8: 1.1, county_ohe_9: 1.1, county_ohe_10: 1.1, county_ohe_11: 1.1, county_ohe_12: 1.1, county_ohe_13: 1.1, county_ohe_14: 1.1, county_ohe_15: 1.1, county_ohe_16: 1.1, county_ohe_17: 1.1, county_ohe_18: 1.1, county_ohe_19: 1.1, county_ohe_20: 1.1, county_ohe_21: 1.1, county_ohe_22: 1.1, county_ohe_23: 1.1, county_ohe_24: 1.1, county_ohe_25: 1.1, county_ohe_26: 1.1, county_ohe_27: 1.1, county_ohe_28: 1.1, county_ohe_29: 1.1, county_ohe_30: 1.1, county_ohe_31: 1.1, county_ohe_32: 1.1, county_ohe_33: 1.1, county_ohe_34: 1.1, county_ohe_35: 1.1, county_ohe_36: 1.1, county_ohe_37: 1.1, county_ohe_38: 1.1, county_ohe_39: 1.1, county_ohe_40: 1.1, county_ohe_41: 1.1, county_ohe_42: 1.1, county_ohe_43: 1.1, county_ohe_44: 1.1, county_ohe_45: 1.1, county_ohe_46: 1.1, county_ohe_47: 1.1, county_ohe_48: 1.1, county_ohe_49: 1.1, county_ohe_50: 1.1, county_ohe_51: 1.1, county_ohe_52: 1.1, county_ohe_53: 1.1, county_ohe_54: 1.1, county_ohe_55: 1.1, county_ohe_56: 1.1, county_ohe_57: 1.1, county_ohe_58: 1.1, county_ohe_59: 1.1, county_ohe_60: 1.1, county_ohe_61: 1.1, county_ohe_62: 1.1, county_ohe_63: 1.1, county_ohe_64: 1.1, county_ohe_65: 1.1, county_ohe_66: 1.1, line_ohe_0: 1.1, line_ohe_1: 1.1, construction_ohe_0: 1.1, construction_ohe_1: 1.1, construction_ohe_2: 1.1, construction_ohe_3: 1.1)
+        do {
+            let cardiacArrestParams = try MLMultiArray(shape: [6], dataType: .double)
+            cardiacArrestParams[0] = NSNumber(value: genderTab.selectedSegmentIndex)
+            cardiacArrestParams[1] = Double(ageEntry.text!) as! NSNumber
+            cardiacArrestParams[2] = Double(heightEntry.text!) as! NSNumber
+            cardiacArrestParams[3] = Double(weightEntry.text!) as! NSNumber
+            cardiacArrestParams[4] = NSNumber(value: isSmoker.selectedSegmentIndex)
+            cardiacArrestParams[5] = Double(rrContainer.text!) as! NSNumber
+            guard let cardiacArrestScore = try? cardiacArrestModel.prediction(patient_data: cardiacArrestParams)
             else{
-                fatalError("Unexpected runtime error.")
+                return
             }
+            UserDefaults.standard.set(Double(cardiacArrestScore.stroke_risk), forKey: "cardiacArrestScore")
+            
+        } catch {
+            print("Error")
+        }
         
-        UserDefaults.standard.set(Double(modelOutput.classProbability[0]!), forKey: "strokeScore")
+        do {
+            let strokeParams = try MLMultiArray(shape: [6], dataType: .double)
+            strokeParams[0] = NSNumber(value: genderTab.selectedSegmentIndex)
+            strokeParams[1] = Double(ageEntry.text!) as! NSNumber
+            strokeParams[2] = Double(heightEntry.text!) as! NSNumber
+            strokeParams[3] = Double(weightEntry.text!) as! NSNumber
+            strokeParams[4] = NSNumber(value: isSmoker.selectedSegmentIndex)
+            strokeParams[5] = Double(rrContainer.text!) as! NSNumber
+            guard let strokeScore = try? strokeModel.prediction(input: strokeParams)
+            else{
+                return
+            }
+            UserDefaults.standard.set(Double(strokeScore.prediction), forKey: "strokeScore")
+            
+        } catch {
+            print("Error")
+        }
+        
+        do {
+            let arrhythmiaParams = try MLMultiArray(shape: [6], dataType: .double)
+            arrhythmiaParams[0] = NSNumber(value: genderTab.selectedSegmentIndex)
+            arrhythmiaParams[1] = Double(ageEntry.text!) as! NSNumber
+            arrhythmiaParams[2] = Double(heightEntry.text!) as! NSNumber
+            arrhythmiaParams[3] = Double(weightEntry.text!) as! NSNumber
+            arrhythmiaParams[4] = NSNumber(value: isSmoker.selectedSegmentIndex)
+            arrhythmiaParams[5] = Double(rrContainer.text!) as! NSNumber
+            guard let arrhythmiaScore = try? arrhythmiaModel.prediction(patient_data: arrhythmiaParams)
+            else {
+                return
+            }
+            UserDefaults.standard.set(Double(arrhythmiaScore.stroke_risk), forKey: "arrhythmiaScore")
+            
+        } catch {
+            print("Error")
+        }
+        
+        
     }
     
     
@@ -107,7 +164,7 @@ class ScoreCalculatorViewController: UIViewController {
                                         // Handle the error here.
                                         print("Error")
                                         rmssd = avg/k
-                                        armmsd + rmssd
+                                        armmsd += rmssd
                                     case .done:
                                         print("Done")
                                     }
