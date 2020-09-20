@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406013BB25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */; };
+		406013C025171F56000E58C1 /* HA_xgb_test_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */; };
 		40D1D3512516614D00C40909 /* ScoreCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */; };
 		F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A15E251600B4005EB026 /* LearnMoreViewController.swift */; };
 		F360A16125160624005EB026 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A16025160624005EB026 /* GoalsViewController.swift */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_rf_test_coreml.mlmodel; path = ../../../Models/HA_rf_test_coreml.mlmodel; sourceTree = "<group>"; };
+		406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_xgb_test_coreml.mlmodel; path = ../../../Models/HA_xgb_test_coreml.mlmodel; sourceTree = "<group>"; };
 		40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculatorViewController.swift; sourceTree = "<group>"; };
 		F360A15E251600B4005EB026 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
 		F360A16025160624005EB026 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				F36EB28C2515B13800611F5F /* HomeViewController.swift */,
 				F36EB28E2515B17800611F5F /* RiskScoreViewController.swift */,
 				F360A15E251600B4005EB026 /* LearnMoreViewController.swift */,
+				406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */,
+				406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */,
 				F360A16025160624005EB026 /* GoalsViewController.swift */,
 				40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */,
 			);
@@ -278,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */,
+				406013C025171F56000E58C1 /* HA_xgb_test_coreml.mlmodel in Sources */,
+				406013BB25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel in Sources */,
 				F360A16125160624005EB026 /* GoalsViewController.swift in Sources */,
 				F36EB28D2515B13800611F5F /* HomeViewController.swift in Sources */,
 				F36EB25F2515AD9200611F5F /* ViewController.swift in Sources */,
