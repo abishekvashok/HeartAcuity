@@ -7,24 +7,27 @@
 //
 
 import UIKit
-import HealthKit
 
 class RiskScoreViewController: UIViewController {
     
-    let HealthKitStore: HKHealthStore = HKHealthStore()
-
+    
+    @IBOutlet weak var strokeView: UIView!
+    
+    @IBOutlet weak var arrhythmiaView: UIView!
+    
+    @IBOutlet weak var cardiacArrestView: UIView!
+    
+    @IBOutlet weak var strokeScoreView: UIView!
+    
+    @IBOutlet weak var arrhythmiaScoreView: UIView!
+    @IBOutlet weak var cardiacArrestScoreView: UIView!
+    
+    
     @IBOutlet weak var strokeScore: UITextView!
     
     @IBOutlet weak var arrhythmiaScore: UITextView!
     
     @IBOutlet weak var cardiacArrestScore: UITextView!
-    
-    @IBOutlet weak var ailmentsTab: UIStackView!
-   
-    @IBOutlet weak var strokeRisk: UITextView!
-    
-    @IBOutlet weak var arrhythmia: UITextView!
-    
     
     
     @IBOutlet weak var cardiacArrest: UITextView!
@@ -33,15 +36,18 @@ class RiskScoreViewController: UIViewController {
         super.viewDidLoad()
         let detectStroke = UserDefaults.standard.bool(forKey: "stroke")
         let detectArrythmia = UserDefaults.standard.bool(forKey: "arrhythmia")
-        let detectCardiacArrest = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
+        let detectCardiacArrest = UserDefaults.standard.bool(forKey: "cardiacArrest")
         let inputStrokeScore = UserDefaults.standard.double(forKey: "strokeScore")
         let inputArrythmiaScore = UserDefaults.standard.double(forKey: "arrythmiaScore")
         let inputCardiacArrestScore = UserDefaults.standard.double(forKey: "cardiacArrestScore")
-        print(detectStroke)
         
-        strokeRisk.isHidden = detectStroke
-        arrhythmia.isHidden = detectArrythmia
-        cardiacArrest.isHidden = detectCardiacArrest
+        strokeScoreView.isHidden = detectStroke
+        arrhythmiaScoreView.isHidden = detectArrythmia
+        cardiacArrestScoreView.isHidden = detectCardiacArrest
+        
+        strokeView.isHidden = detectStroke
+        arrhythmiaView.isHidden = detectArrythmia
+        cardiacArrestView.isHidden = detectCardiacArrest
         
         strokeScore.text = String(inputStrokeScore)
         arrhythmiaScore.text = String(inputArrythmiaScore)
