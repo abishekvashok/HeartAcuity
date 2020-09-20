@@ -40,8 +40,6 @@ class ScoreCalculatorViewController: UIViewController {
             }
         
         UserDefaults.standard.set(Double(modelOutput.classProbability[0]!), forKey: "strokeScore")
-        print(modelOutput.target)
-        print(modelOutput.classProbability[0])
     }
     
     
