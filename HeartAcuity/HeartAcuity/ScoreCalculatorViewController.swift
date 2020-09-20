@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HealthKit
 
 class ScoreCalculatorViewController: UIViewController {
     
@@ -28,6 +29,54 @@ class ScoreCalculatorViewController: UIViewController {
         ageEntry.text = String(UserDefaults.standard.double(forKey: "age"))
         heightEntry.text = String(UserDefaults.standard.double(forKey: "height"))
         weightEntry.text = String(UserDefaults.standard.double(forKey: "weight"))
+        if HKHealthStore.isHealthDataAvailable() {
+            let healthStore = HKHealthStore()
+            let allTypes = Set([HKObjectType.quantityType(forIdentifier: .heartRate)!])
+
+            healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { (success, error) in
+                if !success {
+                    // Create the electrocardiogram sample type.
+                    let ecgType = HKObjectType.electrocardiogramType()
+
+
+                    // Query for electrocardiogram samples
+                    let ecgQuery = HKSampleQuery(sampleType: ecgType,
+                                                 predicate: nil,
+                                                 limit: HKObjectQueryNoLimit,
+                                                 sortDescriptors: nil) { (query, samples, error) in
+                        if let error = error {
+                            // Handle the error here.
+                            fatalError("*** An error occurred \(error.localizedDescription) ***")
+                        }
+                        
+                        guard let ecgSamples = samples as? [HKElectrocardiogram] else {
+                            fatalError("*** Unable to convert \(String(describing: samples)) to [HKElectrocardiogram] ***")
+                        }
+                        
+                        for sample in ecgSamples {
+                            let voltageQuery = HKElectrocardiogramQuery(sample) { (query, result) in
+                                switch(result) {
+                                
+                                case .measurement(let measurement):
+                                    if let voltageQuantity = measurement.quantity(for: .appleWatchSimilarToLeadI) {
+                                        // Do something with the voltage quantity here.
+
+                                    }
+
+                                case .error(let error):
+                                    // Handle the error here.
+                                    print("Error")
+                                }
+                            }
+
+                            // Execute the query.
+                            healthStore.execute(voltageQuery)
+                        }
+                    }
+                    healthStore.execute(ecgQuery)
+                }
+            }
+        }
     }
     
     @IBAction func CalculateRisk(_ sender: Any) {
