@@ -23,7 +23,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stroke = UserDefaults.standard.bool(forKey: "stroke")
-        lungCancer = UserDefaults.standard.bool(forKey: "lungCancer")
+        lungCancer = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
         arrhymia = UserDefaults.standard.bool(forKey: "arrhymia")
         
     }
@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
         if(setting){
             return .white
         } else {
-            return .red
+            return UIColor(red:0.98, green:0.44, blue:0.37, alpha:1.0)
         }
     }
     @IBAction func strokeSettingClicked(_ sender: Any) {
