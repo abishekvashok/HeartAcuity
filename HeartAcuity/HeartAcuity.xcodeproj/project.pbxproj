@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		406013BB25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */; };
 		406013C025171F56000E58C1 /* HA_xgb_test_coreml.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */; };
+		406013C725173CC2000E58C1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 406013C625173CC2000E58C1 /* HealthKit.framework */; };
 		40D1D3512516614D00C40909 /* ScoreCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */; };
 		F360A15F251600B4005EB026 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A15E251600B4005EB026 /* LearnMoreViewController.swift */; };
 		F360A16125160624005EB026 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360A16025160624005EB026 /* GoalsViewController.swift */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		406013BA25171BE2000E58C1 /* HA_rf_test_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_rf_test_coreml.mlmodel; path = ../../../Models/HA_rf_test_coreml.mlmodel; sourceTree = "<group>"; };
 		406013BF25171F56000E58C1 /* HA_xgb_test_coreml.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HA_xgb_test_coreml.mlmodel; path = ../../../Models/HA_xgb_test_coreml.mlmodel; sourceTree = "<group>"; };
+		406013C425173CC1000E58C1 /* HeartAcuity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartAcuity.entitlements; sourceTree = "<group>"; };
+		406013C625173CC2000E58C1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		40D1D3502516614D00C40909 /* ScoreCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculatorViewController.swift; sourceTree = "<group>"; };
 		F360A15E251600B4005EB026 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
 		F360A16025160624005EB026 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406013C725173CC2000E58C1 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		406013C525173CC2000E58C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				406013C625173CC2000E58C1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F36EB24E2515AD9100611F5F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +111,7 @@
 				F36EB2702515AD9400611F5F /* HeartAcuityTests */,
 				F36EB27B2515AD9400611F5F /* HeartAcuityUITests */,
 				F36EB2582515AD9200611F5F /* Products */,
+				406013C525173CC2000E58C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +128,7 @@
 		F36EB2592515AD9200611F5F /* HeartAcuity */ = {
 			isa = PBXGroup;
 			children = (
+				406013C425173CC1000E58C1 /* HeartAcuity.entitlements */,
 				F36EB25A2515AD9200611F5F /* AppDelegate.swift */,
 				F36EB25C2515AD9200611F5F /* SceneDelegate.swift */,
 				F36EB25E2515AD9200611F5F /* ViewController.swift */,
@@ -466,7 +480,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeartAcuity/HeartAcuity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JT9C6BPRW;
 				INFOPLIST_FILE = HeartAcuity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeartAcuity/HeartAcuity.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HeartAcuity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

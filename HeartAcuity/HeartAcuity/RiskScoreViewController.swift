@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import HealthKit
 
 class RiskScoreViewController: UIViewController {
+    
+    let HealthKitStore: HKHealthStore = HKHealthStore()
 
     @IBOutlet weak var strokeScore: UITextView!
     
@@ -23,18 +26,18 @@ class RiskScoreViewController: UIViewController {
     @IBOutlet weak var arrhythmia: UITextView!
     
     
+    
     @IBOutlet weak var cardiacArrest: UITextView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let detectStroke = UserDefaults.standard.bool(forKey: "detectStroke")
-        let detectArrythmia = UserDefaults.standard.bool(forKey: "detectArrhythmia")
+        let detectStroke = UserDefaults.standard.bool(forKey: "stroke")
+        let detectArrythmia = UserDefaults.standard.bool(forKey: "arrhythmia")
         let detectCardiacArrest = UserDefaults.standard.bool(forKey: "detectCardiacArrest")
         let inputStrokeScore = UserDefaults.standard.double(forKey: "strokeScore")
         let inputArrythmiaScore = UserDefaults.standard.double(forKey: "arrythmiaScore")
         let inputCardiacArrestScore = UserDefaults.standard.double(forKey: "cardiacArrestScore")
+        print(detectStroke)
         
         strokeRisk.isHidden = detectStroke
         arrhythmia.isHidden = detectArrythmia
