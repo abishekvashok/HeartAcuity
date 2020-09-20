@@ -29,18 +29,6 @@ class ScoreCalculatorViewController: UIViewController {
         heightEntry.text = String(UserDefaults.standard.double(forKey: "height"))
         weightEntry.text = String(UserDefaults.standard.double(forKey: "weight"))
     }
-
-    
-    /**
-            if let value = ageEntry.text {
-                UserDefaults.standard.set(Double(value), forKey: "age")
-            }
-        
-            else {
-                UserDefaults.standard.set(-1, forKey: "age")
-            
-    }
- */
     
     @IBAction func CalculateRisk(_ sender: Any) {
     
@@ -51,7 +39,9 @@ class ScoreCalculatorViewController: UIViewController {
                 fatalError("Unexpected runtime error.")
             }
         
-        calculateRisk.titleLabel!.text = String(modelOutput.target)
+        UserDefaults.standard.set(Double(modelOutput.classProbability[0]!), forKey: "strokeScore")
+        print(modelOutput.target)
+        print(modelOutput.classProbability[0])
     }
     
     

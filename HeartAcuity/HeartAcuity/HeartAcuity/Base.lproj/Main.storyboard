@@ -894,9 +894,6 @@ to see</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="ageField:" destination="ea5-Uo-Uzp" eventType="editingDidEnd" id="J8i-TZ-xC0"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJW-5C-FeD">
                                                 <rect key="frame" x="28.333333333333339" y="21.666666666666671" width="56.666666666666657" height="20.333333333333329"/>
@@ -931,9 +928,6 @@ to see</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="weightField:" destination="ea5-Uo-Uzp" eventType="editingDidEnd" id="L83-cC-MnT"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-44-0KQ" userLabel="Height">
                                                 <rect key="frame" x="28.333333333333339" y="21.666666666666686" width="56.666666666666657" height="20.333333333333329"/>
@@ -959,9 +953,6 @@ to see</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="heightField:" destination="ea5-Uo-Uzp" eventType="editingDidEnd" id="Wcf-5U-xmz"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0K-fF-wRL" userLabel="Weight">
                                                 <rect key="frame" x="28.333333333333339" y="21.666666666666657" width="56.666666666666657" height="20.333333333333329"/>
@@ -996,9 +987,6 @@ to see</string>
                                                     <segment title="Male"/>
                                                     <segment title="Female"/>
                                                 </segments>
-                                                <connections>
-                                                    <action selector="genderInput:" destination="ea5-Uo-Uzp" eventType="valueChanged" id="QaG-2Y-8Yc"/>
-                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="0.8338773544520548" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1025,9 +1013,6 @@ to see</string>
                                                     <segment title="Yes"/>
                                                     <segment title="No"/>
                                                 </segments>
-                                                <connections>
-                                                    <action selector="smokerInput:" destination="ea5-Uo-Uzp" eventType="valueChanged" id="3vr-CL-0jq"/>
-                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.4392156862745098" blue="0.36862745098039218" alpha="0.82820526541095896" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1078,8 +1063,8 @@ to see</string>
                                     <constraint firstItem="WwM-2g-Dlf" firstAttribute="leading" secondItem="xL4-x8-YQl" secondAttribute="leading" id="smB-SG-ZV8"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArE-aS-srY">
-                                <rect key="frame" x="116" y="605.66666666666663" width="182" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArE-aS-srY">
+                                <rect key="frame" x="83.999999999999986" y="605.66666666666663" width="251.66666666666663" height="40"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.43921568630000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
@@ -1094,7 +1079,6 @@ to see</string>
                                 </state>
                                 <connections>
                                     <action selector="CalculateRisk:" destination="ea5-Uo-Uzp" eventType="touchUpInside" id="z98-8V-eAX"/>
-                                    <action selector="ageField:" destination="ea5-Uo-Uzp" eventType="touchUpInside" id="YPA-er-ryU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy9-am-jFx">
@@ -1119,6 +1103,8 @@ to see</string>
                             <constraint firstItem="xy9-am-jFx" firstAttribute="centerX" secondItem="dJK-tv-xmm" secondAttribute="centerX" multiplier="0.8" id="UDg-IZ-0dY"/>
                             <constraint firstItem="ArE-aS-srY" firstAttribute="centerY" secondItem="dJK-tv-xmm" secondAttribute="centerY" multiplier="1.7" id="XBe-Va-17E"/>
                             <constraint firstItem="xy9-am-jFx" firstAttribute="centerY" secondItem="dJK-tv-xmm" secondAttribute="centerY" multiplier="0.14" id="gxl-9b-12u"/>
+                            <constraint firstItem="ArE-aS-srY" firstAttribute="centerX" secondItem="dJK-tv-xmm" secondAttribute="centerX" id="hDd-vZ-NQN"/>
+                            <constraint firstItem="ArE-aS-srY" firstAttribute="width" secondItem="dJK-tv-xmm" secondAttribute="width" multiplier="0.6" id="rks-QL-Qbt"/>
                             <constraint firstItem="T1v-fO-m9J" firstAttribute="height" secondItem="dJK-tv-xmm" secondAttribute="height" multiplier="0.6" id="rrz-Ta-E90"/>
                             <constraint firstItem="T1v-fO-m9J" firstAttribute="width" secondItem="dJK-tv-xmm" secondAttribute="width" multiplier="0.9" id="uIX-EY-bTp"/>
                         </constraints>
