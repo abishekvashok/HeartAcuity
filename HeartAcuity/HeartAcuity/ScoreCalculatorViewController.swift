@@ -53,7 +53,7 @@ class ScoreCalculatorViewController: UIViewController {
             let allTypes = Set([HKObjectType.quantityType(forIdentifier: .heartRate)!])
 
             healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { (success, error) in
-                if !success {
+                if success {
                     // Create the electrocardiogram sample type.
                     if #available(iOS 14.0, *) {
                         let ecgType = HKObjectType.electrocardiogramType()
