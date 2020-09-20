@@ -76,10 +76,7 @@ class ScoreCalculatorViewController: UIViewController {
                 fatalError("Unexpected runtime error.")
             }
         
-        calculateRisk
-        
-        
-        
+        calculateRisk.titleLabel!.text = String(modelOutput.target)
     }
     
 }
