@@ -66,23 +66,16 @@ class ScoreCalculatorViewController: UIViewController {
                                 // Handle the error here.
                                 fatalError("*** An error occurred \(error.localizedDescription) ***")
                             }
-                            if let done = done {
-                                if(l != 0){
-                                    armmsd = armmsd / l
-                                    rrContainer.text = String(armmsd)
-                                }
-                                
-                            }
-                            
+                     
                             guard let ecgSamples = samples as? [HKElectrocardiogram] else {
                                 fatalError("*** Unable to convert \(String(describing: samples)) to [HKElectrocardiogram] ***")
                             }
                             
                             for sample in ecgSamples {
-                                i = 0
-                                j = 0
-                                startI = 0
-                                k = 0
+                                var i = 0
+                                var j = 0
+                                var startI = 0
+                                var k = 0
                                 var avg = 0
                                 var rmssd = 0
                                 let voltageQuery = HKElectrocardiogramQuery(sample) { (query, result) in
@@ -91,12 +84,15 @@ class ScoreCalculatorViewController: UIViewController {
                                     case .measurement(let measurement):
                                         if let voltageQuantity = measurement.quantity(for: .appleWatchSimilarToLeadI) {
                                             i = i + 1
-                                            if(voltageQuantity > 1 && j = 0){
+                                            if let number = Int(voltageQuantity, radix: 2){
+                                                print(number)
+                                            }
+                                            if(Int(voltageQuantity) > 1 && j == 0){
                                                 if(i == 1){
                                                     startI = i
                                                 } else {
                                                     var diff = i - startI
-                                                    diff = diff / (ecgSamples.SampleFrequency())
+                                                    diff = diff / (ecgSamples.sampleFrequency())
                                                     diff = diff * diff
                                                     k = k + 1
                                                     avg = avg + diff
@@ -120,6 +116,10 @@ class ScoreCalculatorViewController: UIViewController {
 
                                 // Execute the query.
                                 healthStore.execute(voltageQuery)
+                            }
+                            if(l != 0){
+                                armmsd = armmsd / l
+                                self.rrContainer.text = String(armmsd)
                             }
                         }
                         healthStore.execute(ecgQuery)
