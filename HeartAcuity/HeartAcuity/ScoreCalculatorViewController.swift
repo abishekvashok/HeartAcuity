@@ -33,6 +33,8 @@ class ScoreCalculatorViewController: UIViewController {
     }
     
     @IBAction func CalculateRisk(_ sender: Any) {
+        
+        
     
         let model = HA_xgb_test_coreml()
         
@@ -84,15 +86,13 @@ class ScoreCalculatorViewController: UIViewController {
                                     case .measurement(let measurement):
                                         if let voltageQuantity = measurement.quantity(for: .appleWatchSimilarToLeadI) {
                                             i = i + 1
-                                            if let number = Int(voltageQuantity, radix: 2){
-                                                print(number)
-                                            }
-                                            if(Int(voltageQuantity) > 1 && j == 0){
+                                            let value = Int(voltageQuantity.doubleValue(for: HKUnit.count()))
+                                            if(value > 1 && j == 0){
                                                 if(i == 1){
                                                     startI = i
                                                 } else {
                                                     var diff = i - startI
-                                                    diff = diff / (ecgSamples.sampleFrequency())
+                                                    diff = diff / 125
                                                     diff = diff * diff
                                                     k = k + 1
                                                     avg = avg + diff
