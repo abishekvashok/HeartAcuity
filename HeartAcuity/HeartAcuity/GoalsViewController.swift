@@ -12,23 +12,17 @@ class GoalsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        /*
-         let string = "Hello, world!"
-         let url = URL(string: "https://facebook.com")!
-         let image = UIImage(named: "mustache.jpg")
-         let pdf = Bundle.main.url(forResource: "Q4 Projections",
+        let string = "Hello, world!"
+        let url = URL(string: "https://facebook.com")!
+        let image = UIImage(named: "mustache.jpg")
+        let pdf = Bundle.main.url(forResource: "Q4 Projections",
                                      withExtension: "pdf")
 
-         let activityViewController =
+        let activityViewController =
              UIActivityViewController(activityItems: [string, url, image, pdf],
                                       applicationActivities: nil)
 
-         present(activityViewController, animated: true) {
-             …
-         }
-         */
+        present(activityViewController, animated: true)
     }
 
 }
