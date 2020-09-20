@@ -13,6 +13,10 @@ class GoalsViewController: UIViewController {
 
     @IBOutlet weak var walkingProgress: UIProgressView!
     @IBOutlet var sleepingProgress: [UIProgressView]!
+    @IBOutlet weak var progressLabel: UILabel!
+    @IBAction func fbButtonclicked(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.facebook.com/sharer/sharer.php?u=https://sandratang.github.io/heartacuity.html&quote=Working out for a better tommorrow")!, options: [:], completionHandler: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if HKHealthStore.isHealthDataAvailable() {
@@ -20,7 +24,7 @@ class GoalsViewController: UIViewController {
             guard let type = HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning) else {
                 fatalError("Something went wrong retrieving quantity type distanceWalkingRunning")
             }
-            let allTypes = Set([HKObjectType.quantityType(forIdentifier: .heartRate)!])
+            let allTypes = Set([HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!])
 
             healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { (success, error) in
                 if !success {
@@ -40,7 +44,6 @@ class GoalsViewController: UIViewController {
                     print("something went wrong")
                 } else if let quantity = statistics?.sumQuantity() {
                     value = quantity.doubleValue(for: HKUnit.mile())
-                    
                 }
                 DispatchQueue.main.async {
                     self.completion(val: value)
@@ -52,6 +55,7 @@ class GoalsViewController: UIViewController {
     func completion(val: Double){
         let value = (val / 7)*100
         walkingProgress.setProgress(Float(value), animated: false)
+        progressLabel.text = String(value) + " out of 4 miles"
     }
 
 }

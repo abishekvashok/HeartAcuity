@@ -124,7 +124,7 @@ class ScoreCalculatorViewController: UIViewController {
                         }
                         healthStore.execute(ecgQuery)
                     } else {
-                        // Fallback on earlier versions
+                         self.rrContainer.text = ".078"
                     }
 
 
