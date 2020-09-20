@@ -16,7 +16,18 @@ class ScoreCalculatorViewController: UIViewController {
     
     @IBOutlet weak var weightEntry: UITextField!
     
+    @IBOutlet weak var genderTab: UISegmentedControl!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ageEntry.text = String(UserDefaults.standard.double(forKey: "age"))
+        heightEntry.text = String(UserDefaults.standard.double(forKey: "height"))
+        weightEntry.text = String(UserDefaults.standard.(forKey: "detectCardiacArrest"))
+        let strokeScore = UserDefaults.standard.double(forKey: "detectStroke")
+        let arrythmiaScore = UserDefaults.standard.double(forKey: "detectArrhythmia")
+        let cardiacArrestScore = UserDefaults.standard.double(forKey: "detectCardiacArrest")
+    }
 
     
     @IBAction func ageField(_ sender: Any){
